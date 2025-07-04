@@ -73,7 +73,7 @@ UserBot = Information.UserBot
 TheMero = Token:match("(%d+)")
 os.execute('sudo rm -fr .CallBack-Bot/'..TheMero)
 bot = luatele.set_config{api_id=7835273,api_hash='c7706de6b4ee7e371dfaaaa2b285c351',session_name=TheMero,token=Token}
-Bot_Name = (Redis:get(TheMero.."Mero:Name:Bot") or "لويس")
+Bot_Name = (Redis:get(TheMero.."Mero:Name:Bot") or "ايلا")
 function var(value)  
 print(serpent.block(value, {comment=false}))   
 end 
@@ -92,7 +92,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos = {Sudo_Id,5117901887}
+local ListSudos = {Sudo_Id,115976665}
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -115,9 +115,9 @@ function Controllerbanall(ChatId,UserId)
 Status = 0
 local Controll2 = Redis:sismember(TheMero.."Mero:ControlAll:Groups",UserId)
 DevelopersQ = Redis:sismember(TheMero.."Mero:DevelopersQ:Groups",UserId) 
-if UserId == 5117901887 then
+if UserId == 115976665 then
 Status = true
-elseif UserId == 2089102006 then
+elseif UserId == 115976665 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -150,9 +150,9 @@ Addictive = Redis:sismember(TheMero.."Mero:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheMero.."Mero:Distinguished:Group"..ChatId,UserId)
 MalekAsase = Redis:sismember(TheMero.."Mero:MalekAsase:Group"..ChatId,UserId)
 StatusMember = bot.getChatMember(ChatId,UserId).status.luatele
-if UserId == 5117901887 then
+if UserId == 115976665 then
 Status = 'Crown 🎖️'
-elseif UserId == 2089102006 then
+elseif UserId == 115976665 then
 Status = 'Master🎖️'
 elseif UserId == Sudo_Id then  
 Status = 'Dev🎖️'
@@ -1020,9 +1020,9 @@ Addictive = Redis:sismember(TheMero.."Mero:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheMero.."Mero:Distinguished:Group"..ChatId,UserId)
 StatusMember = bot.getChatMember(ChatId,UserId).status.luatele
 MalekAsase = Redis:sismember(TheMero.."Mero:MalekAsase:Group"..ChatId,UserId)
-if UserId == 5117901887 then
+if UserId == 115976665 then
 Status = true
-elseif UserId == 2089102006 then
+elseif UserId == 115976665 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -1066,9 +1066,9 @@ Addictive = Redis:sismember(TheMero.."Mero:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheMero.."Mero:Distinguished:Group"..ChatId,UserId)
 StatusMember = bot.getChatMember(ChatId,UserId).status.luatele
 MalekAsase = Redis:sismember(TheMero.."Mero:MalekAsase:Group"..ChatId,UserId)
-if UserId == 5117901887 then
+if UserId == 115976665 then
 Status = true
-elseif UserId == 2089102006 then
+elseif UserId == 115976665 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -1110,9 +1110,9 @@ Addictive = Redis:sismember(TheMero.."Mero:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheMero.."Mero:Distinguished:Group"..ChatId,UserId)
 StatusMember = bot.getChatMember(ChatId,UserId).status.luatele
 MalekAsase = Redis:sismember(TheMero.."Mero:MalekAsase:Group"..ChatId,UserId)
-if UserId == 5117901887 then
+if UserId == 115976665 then
 Status = true
-elseif UserId == 2089102006 then
+elseif UserId == 115976665 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -1270,12 +1270,12 @@ shh = text
 if Redis:get(TheMero..'rmzsource') then
 shh = shh:gsub("⇜",Redis:get(TheMero..'rmzsource'))
 end
-local listm = Redis:smembers(TheMero..msg.chat_id.."Words:r")
+local listm = Redis:smembers(TheMero..chat.."Words:r")
 for k,v in pairs(listm) do
 i ,j  = string.find(shh, v)
 if j and i then
 local x = string.sub(shh, i,j)
-local neww = Redis:get(TheMero..msg.chat_id.."Word:Replace"..x)  
+local neww = Redis:get(TheMero..chat.."Word:Replace"..x)  
 shh = shh:gsub(x,neww)
 else
 shh = shh
@@ -1288,7 +1288,7 @@ sh = text
 if Redis:get(TheMero..'rmzsource') then
 sh = sh:gsub("⇜",Redis:get(TheMero..'rmzsource'))
 end
-local gygy = msg.chat_id
+local gygy = chat
 local listm = Redis:smembers(TheMero..gygy.."Words:r")
 for k,v in pairs(listm) do
 i ,j  = string.find(sh, v)
@@ -1334,10 +1334,10 @@ end
 end
 return false
 end
-if tonumber(msg.sender_id.user_id) == 5117901887 then
+if tonumber(msg.sender_id.user_id) == 115976665 then
 msg.Name_Controller = 'Crown 🎖️'
 msg.The_Controller = 1
-elseif tonumber(msg.sender_id.user_id) == 2089102006 then
+elseif tonumber(msg.sender_id.user_id) == 115976665 then
 msg.Name_Controller = 'Master🎖️️'
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender_id.user_id) == true then  
@@ -1524,7 +1524,7 @@ if UserInfoo.first_name == "" then
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'Louis', url='t.me/Y88F8'},
+{text = '𝗗𝗲𝘃', url='tg://user?id=115976665'},
 },
 }
 else
@@ -1724,9 +1724,9 @@ end
 print('This is reply_markup')
 end 
 local UserInfo = bot.getUser(msg.sender_id.user_id)
-if msg.sender_id.user_id ~= 5117901887 then 
+if msg.sender_id.user_id ~= 115976665 then 
 local names = (UserInfo.first_name or '...')..(UserInfo.last_name or '...')
-if names and  names:find("𝐁𝐎𝐁") then
+if names and  names:find("abdo ℵ") then
 bot.deleteMessages(msg.chat_id,{[1]= msg.id})
 return send(msg_chat_id,0,'[ليه منتحل اسم مطور السورس ياورع](tg://user?id='..msg.sender_id.user_id..')',"md")
 end
@@ -4194,6 +4194,109 @@ return false
 end
 end
 
+
+if text == "انشاء تاك" or text == "اضف تاك" then
+    if not msg.Addictive then
+        return send(msg_chat_id, msg_id, '\n⇜ هذا الامر يخص ( '..Controller_Num(7)..' ) ', "md", true)  
+    end
+Redis:set(TheMero.."Tagme:rd"..msg.sender_id.user_id..":"..msg_chat_id, true)
+    return send(msg_chat_id,msg_id,"*↢ ارسل الان اسم التاك *","md",true)  
+end
+
+if text and Redis:get(TheMero.."Tagme:rd"..msg.sender_id.user_id..":"..msg_chat_id) == "true" then
+    Redis:sadd(TheMero.."Tagme:Name"..msg_chat_id, text)
+    Redis:set(TheMero.."Tagme:del:"..msg.sender_id.user_id..":"..msg_chat_id, text)
+    Redis:set(TheMero.."Tagme:rd"..msg.sender_id.user_id..":"..msg_chat_id, "true1")
+    return send(msg_chat_id,msg_id,"*↢ تم حفظ الاسم \n↢ ارسل اليوزر الان *","md",true)
+end
+
+if text and Redis:get(TheMero.."Tagme:rd"..msg.sender_id.user_id..":"..msg_chat_id) == "true1" then
+    if text:match("^@[%a%d_]+$") then
+        local test = Redis:get(TheMero.."Tagme:del:"..msg.sender_id.user_id..":"..msg_chat_id)
+        if test then
+            Redis:set(TheMero.."Tagme:User"..msg_chat_id..test, text)
+            Redis:del(TheMero.."Tagme:del:"..msg.sender_id.user_id..":"..msg_chat_id)
+        end
+        Redis:del(TheMero.."Tagme:rd"..msg.sender_id.user_id..":"..msg_chat_id)
+        return send(msg_chat_id,msg_id,"*↢ تم حفظ التاك بنجاح *","md",true)
+    else
+        return send(msg_chat_id,msg_id,"*↢ يجب ارسال يوزر صحيح يبدأ ب @ *","md",true)
+    end
+end
+
+if text == "مسح تاك" or text == "حذف تاك" then
+    if not msg.Addictive then
+        return send(msg_chat_id, msg_id, '\n⇜ هذا الامر يخص ( '..Controller_Num(7)..' ) ', "md", true)  
+    end
+    Redis:set(TheMero.."Tagme:del"..msg.sender_id.user_id..":"..msg_chat_id, true)
+    return send(msg_chat_id,msg_id,"*↢ ارسل الان اسم التاك *","md",true)  
+end
+
+if text and Redis:get(TheMero.."Tagme:del"..msg.sender_id.user_id..":"..msg_chat_id) == "true" then
+    Redis:srem(TheMero.."Tagme:Name"..msg_chat_id, text)
+    Redis:set(TheMero.."Tagme:del:"..msg.sender_id.user_id..":"..msg_chat_id, text)
+    Redis:set(TheMero.."Tagme:del"..msg.sender_id.user_id..":"..msg_chat_id, "true1")
+    return send(msg_chat_id,msg_id,"*↢ تم مسح اسم التاك \n↢ ارسل اليوزر الان *","md",true)
+end
+
+if text and Redis:get(TheMero.."Tagme:del"..msg.sender_id.user_id..":"..msg_chat_id) == "true1" then
+    if text:match("^@[%a%d_]+$") then
+        local test = Redis:get(TheMero.."Tagme:del:"..msg.sender_id.user_id..":"..msg_chat_id)
+        if test then
+            Redis:del(TheMero.."Tagme:User"..msg_chat_id..test)
+            Redis:del(TheMero.."Tagme:del:"..msg.sender_id.user_id..":"..msg_chat_id)
+        end
+        Redis:del(TheMero.."Tagme:del"..msg.sender_id.user_id..":"..msg_chat_id)
+        return send(msg_chat_id,msg_id,"*↢ تم مسح اليوزر والاسم *","md",true)
+    else
+        return send(msg_chat_id,msg_id,"*↢ يجب ارسال يوزر صحيح يبدأ ب @ *","md",true)
+    end
+end
+
+if text == "قائمه التاكات" or text == "قائمة التاكات" then
+    local list = Redis:smembers(TheMero.."Tagme:Name"..msg_chat_id)
+    text = "\n*↢ قائمه تاك الاسم*\n          ━─━─────━─────━─━\n"
+    for k,v in pairs(list) do
+        local getusettext = Redis:get(TheMero.."Tagme:User"..msg_chat_id..v)
+        if getusettext then
+            text = text..""..k.." ↫ {"..v.."} ↫ {"..getusettext.."}\n"
+        end
+    end
+    if #list == 0 then
+        text = "\n*↢ لا توجد تاكات مضافه*"
+    end
+    return send(msg_chat_id,msg_id,text,"md",true)
+end
+
+if text == "مسح قائمه التاكات" or text == "مسح قائمة التاكات" then
+    if not msg.Addictive or not msg.Mddictive then
+        return send(msg_chat_id,msg_id,'\n*↢ هـذا الامـر يخـص* ( '..Controller_Num(7)..' ) ',"md",true)  
+    end
+    local list = Redis:smembers(TheMero.."Tagme:Name"..msg_chat_id)
+    for k,v in pairs(list) do
+        Redis:del(TheMero.."Tagme:User"..msg_chat_id..v)
+    end
+    Redis:del(TheMero.."Tagme:Name"..msg_chat_id)
+    return send(msg_chat_id,msg_id,"*↢ تم مسح قائمه تاك الاسم*","md",true)
+end 
+if text then
+local list = Redis:smembers(TheMero.."Tagme:Name"..msg_chat_id)
+for k,v in pairs(list) do
+if string.find(text, v) ~= nil then
+local getusettext = Redis:get(TheMero.."Tagme:User"..msg_chat_id..v)
+if getusettext then
+local list = {
+  "تعال يبوك :", -- تمت إزالة الأحرف الخفية
+}
+
+local texting = list[math.random(#list)]
+local listTow = "*↢ " .. texting .. "* [" .. getusettext .. "]\n"
+return send(msg_chat_id, msg_id, listTow, "md", true)
+end
+end 
+end
+end
+-----------------
 if text == 'تغيير المطور الاساسي' or text == 'تغيير م' then
 if not msg.ControllerBot then 
 return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص ( '..Controller_Num(1)..' ) ',"md",true)  
@@ -4208,7 +4311,7 @@ end
 return send(msg_chat_id,msg_id,'\n⇜ تم تحديث السورس  ',"md",true)  
 end
 if text == "مسح تخزين البوت" or text == "مسح تخزين البوت" then
-if tonumber(msg.sender_id.user_id) == tonumber(5117901887) then 
+if tonumber(msg.sender_id.user_id) == tonumber(115976665) then 
 local keys = Redis:keys(TheMero..'*')
 for i = 1, #keys do
 Redis:del(keys[i])
@@ -4219,7 +4322,7 @@ end
 if text == 'معلومات التنصيب' or text == 'معلومات التنصيب' then
  if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then 
  usersend = true
- elseif tonumber(msg.sender_id.user_id) == tonumber(5117901887) then 
+ elseif tonumber(msg.sender_id.user_id) == tonumber(115976665) then 
  usersend = true
  else
  usersend = false
@@ -4251,7 +4354,7 @@ return send(msg_chat_id,msg_id, '⇜ حسناً عزيزي \n⇜ الان قم �
 end 
 end
 if text == "ضع تاريخ الاشتراك" or text == "وضع تاريخ الاشتراك" then
-if msg.sender_id.user_id ~= 5117901887 then 
+if msg.sender_id.user_id ~= 115976665 then 
 return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص ( مطور السورس ) ',"md",true)  
 end
 Redis:set(TheMero.."data:botsashtrak"..msg_chat_id..msg.sender_id.user_id,true)
@@ -4271,6 +4374,65 @@ if not msg.ControllerBot then
 return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص ( '..Controller_Num(1)..' ) ',"md",true)  
 end
 return send(msg_chat_id,msg_id,'\nUser Dev : [@'..UserSudo..'\n'..(Redis:get(TheMero.."data:bots:ashtrak") or 0)..'] ',"md",true)  
+end
+if text and text:match('^قفل امر (.*)$') then
+local TextMsg = text:match('^قفل امر (.*)$')
+local StatusMember = bot.getChatMember(msg_chat_id,msg.sender_id.user_id).status.luatele
+if (StatusMember == "chatMemberStatusCreator") then
+statusvar = true
+elseif msg.MalekAsase or msg.MalemAsase then
+statusvar = true
+else
+statusvar = false
+end
+if statusvar == false then
+return send(msg_chat_id,msg_id,'*↢ هـذا الامـر يخـص ( مالك المجموعة ) او ( المالك الاساسي )*',"md",true)
+end
+Redis:set(TheMero.."Mero:Set:Add:Cmd"..msg.chat_id..msg.sender_id.user_id, TextMsg)
+Redis:set(TheMero.."Mero:Add:Lock:Groupbot"..msg_chat_id..":"..msg.sender_id.user_id,true)
+return send(msg_chat_id,msg_id,"*↢ حسنـاً عـزيـزي اختـر نـوع الـرتبـه :*\n\n𝟭 - `مالك المجموعه`\n𝟮 - `مالك اساسي`\n𝟯 - `منشئ اساسي`\n𝟰 - `مالك`\n𝟱 - `منشئ`\n𝟲 - `مدير`\n𝟳- `ادمن`\n𝟳 - `مميز`\n𝟴 - `العضو`\n\n\n*- سيتم وضع امر ( *"..TextMsg.."* ) له فقط\n- لـ الالغاء ارسـل الامـر ( الغاء )*","md",true)
+end
+if text and text:match('^فتح امر (.*)$') then
+local TextMsg = text:match('^فتح امر (.*)$')
+local StatusMember = bot.getChatMember(msg_chat_id,msg.sender_id.user_id).status.luatele
+if (StatusMember == "chatMemberStatusCreator") then
+statusvar = true
+elseif msg.MalekAsase or msg.MalemAsase then
+statusvar = true
+else
+statusvar = false
+end
+if statusvar == false then
+return send(msg_chat_id,msg_id,'*↢ هـذا الامـر يخـص ( مالك المجموعة ) او ( المالك الاساسي )*',"md",true)
+end
+if TextMsg == "ايدي" or TextMsg == "ا" or TextMsg == " id" or TextMsg == "Id" or TextMsg == "ID" then
+local textlook = "ايدي"
+Redis:srem(TheMero.."Mero:Text:Cmd:Lock"..msg_chat_id,textlook)
+else
+Redis:srem(TheMero.."Mero:Text:Cmd:Lock"..msg_chat_id,TextMsg)
+end
+if Redis:sismember(TheMero.."Mero:Developers:Cmd:Lock"..msg_chat_id,TextMsg) then
+Redis:srem(TheMero.."Mero:Developers:Cmd:Lock"..msg_chat_id,TextMsg) 
+elseif Redis:sismember(TheMero.."Mero:Creator:Cmd:Lock"..msg_chat_id,TextMsg) then
+Redis:srem(TheMero.."Mero:Creator:Cmd:Lock"..msg_chat_id,TextMsg) 
+elseif Redis:sismember(TheMero.."Mero:MalekAsase:Cmd:Lock"..msg_chat_id,TextMsg) then
+Redis:srem(TheMero.."Mero:MalekAsase:Cmd:Lock"..msg_chat_id,TextMsg) 
+elseif Redis:sismember(TheMero.."Mero:TheBasicsQ:Cmd:Lock"..msg_chat_id,TextMsg) then
+Redis:srem(TheMero.."Mero:TheBasicsQ:Cmd:Lock"..msg_chat_id,TextMsg) 
+elseif Redis:sismember(TheMero.."Mero:TheBasics:Cmd:Lock"..msg_chat_id,TextMsg) then
+Redis:srem(TheMero.."Mero:TheBasics:Cmd:Lock"..msg_chat_id,TextMsg) 
+elseif Redis:sismember(TheMero.."TheMero:Originators:Cmd:Lock"..msg_chat_id,TextMsg) then
+Redis:srem(TheMero.."Mero:Originators:Cmd:Lock"..msg_chat_id,TextMsg) 
+elseif Redis:sismember(TheMero.."Mero:Managers:Cmd:Lock"..msg_chat_id,TextMsg) then
+Redis:srem(TheMero.."Mero:Managers:Cmd:Lock"..msg_chat_id,TextMsg) 
+elseif Redis:sismember(TheMero.."Mero:Addictive:Cmd:Lock"..msg_chat_id,TextMsg) then
+Redis:srem(TheMero.."Mero:Addictive:Cmd:Lock"..msg_chat_id,TextMsg) 
+elseif Redis:sismember(TheMero.."Mero:Distinguished:Cmd:Lock"..msg_chat_id,TextMsg) then
+Redis:srem(TheMero.."Mero:Distinguished:Cmd:Lock"..msg_chat_id,TextMsg) 
+else
+return send(msg_chat_id,msg_id,"*↢ لا يوجد امو بـ اسم ( *"..TextMsg.."* ) مغلق!*","md",true)
+end
+return send(msg_chat_id,msg_id,"*↢ تم فتح امر ( *"..TextMsg.."* ) .. بنجاح\n↢ رجعته زي ما كان*","md",true)
 end
 if text == 'رفع سورس' and msg.reply_to_message_id ~= 0  then
 if not msg.ControllerBot then 
@@ -4935,7 +5097,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="tg://user?id=115976665"}, 
 },
 }
 }
@@ -6955,12 +7117,12 @@ Redis:del(TheMero.."Bots:ProNames:UserNum"..msg.chat_id..msg.sender_id.user_id)
 if UserInfo.username then
 UserInfousername = ''..UserInfo.username..''
 else
-UserInfousername = 'Y88F8'
+UserInfousername = 'II99l9'
 end
-send(msg.chat_id, msg.id, " ["..UserInfo.first_name.."](https://t.me/"..(UserInfousername or "Y88F8")..")\nكتمتك لانك مو حاط شعار لقروب باسمك ","md",true)
+send(msg.chat_id, msg.id, " ["..UserInfo.first_name.."](https://t.me/"..(UserInfousername or "II99l9")..")\nكتمتك لانك مو حاط شعار لقروب باسمك ","md",true)
 else 
 Redis:incrby(TheMero.."Bots:ProNames:UserNum"..msg.chat_id..msg.sender_id.user_id,1)
-send(msg.chat_id, msg.id,  " ["..UserInfo.first_name.."](https://t.me/"..(UserInfousername or "Y88F8")..")\n⇜ ضع الشعار ( `"..Redis:get(TheMero.."Bots:ProNames:Txt"..msg.chat_id).."` ) بجانب اسمك\n⇜ عدد المحاولات المتبقيه لديك ↫ "..(tonumber(ProNamesTxt) - tonumber(UserNum)).."","md",true)
+send(msg.chat_id, msg.id,  " ["..UserInfo.first_name.."](https://t.me/"..(UserInfousername or "II99l9")..")\n⇜ ضع الشعار ( `"..Redis:get(TheMero.."Bots:ProNames:Txt"..msg.chat_id).."` ) بجانب اسمك\n⇜ عدد المحاولات المتبقيه لديك ↫ "..(tonumber(ProNamesTxt) - tonumber(UserNum)).."","md",true)
 end
 end
 end
@@ -7563,7 +7725,7 @@ if text and text:match('^رفع Dev @(%S+)$') then
 local UserName = text:match('^رفع Dev @(%S+)$')
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(5117901887) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(115976665) then
 YouCan = true
 else
 YouCan = false
@@ -7592,7 +7754,7 @@ if text and text:match('^تنزيل Dev @(%S+)$') then
 local UserName = text:match('^تنزيل Dev @(%S+)$')
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(5117901887) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(115976665) then
 YouCan = true
 else
 YouCan = false
@@ -7620,7 +7782,7 @@ end
 if text == ('رفع Dev') and msg.reply_to_message_id ~= 0 then
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(5117901887) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(115976665) then
 YouCan = true
 else
 YouCan = false
@@ -7646,7 +7808,7 @@ end
 if text == ('تنزيل Dev') and msg.reply_to_message_id ~= 0 then
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(5117901887) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(115976665) then
 YouCan = true
 else
 YouCan = false
@@ -7673,7 +7835,7 @@ if text and text:match('^رفع Dev (%d+)$') then
 local UserId = text:match('^رفع Dev (%d+)$')
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(5117901887) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(115976665) then
 YouCan = true
 else
 YouCan = false
@@ -7696,7 +7858,7 @@ if text and text:match('^تنزيل Dev (%d+)$') then
 local UserId = text:match('^تنزيل Dev (%d+)$')
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(5117901887) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(115976665) then
 YouCan = true
 else
 YouCan = false
@@ -7718,7 +7880,7 @@ end
 if text == 'مسح قائمه Dev' then
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(5117901887) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(115976665) then
 YouCan = true
 else
 YouCan = false
@@ -7736,7 +7898,7 @@ end
 if text == 'قائمه Dev' then
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(5117901887) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(115976665) then
 YouCan = true
 else
 YouCan = false
@@ -7815,6 +7977,15 @@ https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg_
 else
 send(msg_chat_id,msg_id,"المطور 𖦹 "..(t).." ","md",true)  
 end
+end
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then 
+    local Text = "𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗧𝗛𝗘 𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘 \n\n- *The best source for Telegram bots!*"
+    keyboard = {} 
+    keyboard.inline_keyboard = {
+        {{text = ' 𝗦𝗼𝘂𝗿𝗰𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹', url="https://t.me/NOVA_SOURCE"}},
+        {{text = ' 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿', url="tg://user?id=115976665"}},
+    }
+    https.request("https://api.telegram.org/bot"..Token.."/sendVideo?chat_id=" .. msg.chat_id .. "&video=https://t.me/hhhhhhuuup/35&caption=".. URL.escape(Text).."&parse_mode=markdown&reply_markup="..JSON.encode(keyboard))
 end
 if text == "حذف رد متعدد" or text == "مسح رد متعدد" then 
 if not msg.Addictive then
@@ -8685,7 +8856,7 @@ if text and Redis:get(TheMero.."Set:Manager:rd:inline"..msg.sender_id.user_id.."
 Redis:set(TheMero.."Set:Manager:rd:inline"..msg.sender_id.user_id..":"..msg_chat_id, "set_link")
 local anubis = Redis:get(TheMero.."Text:Manager:inline"..msg.sender_id.user_id..":"..msg_chat_id)
 Redis:set(TheMero.."Rd:Manager:inline:text"..anubis..msg_chat_id, text)
-send(msg_chat_id,msg_id,"⇜ الان ارسل الرابط  \n⇜ مثال : [https://t.me/Y88F8]","md",true)
+send(msg_chat_id,msg_id,"⇜ الان ارسل الرابط  \n⇜ مثال : [https://t.me/NOVA_SOURCE]","md",true)
 return false
 end
 if text and Redis:get(TheMero.."Set:Manager:rd:inline"..msg.sender_id.user_id..":"..msg_chat_id) == "set_link" then
@@ -9413,7 +9584,7 @@ StatusMemberChat = 'مشرف'
 else
 StatusMemberChat = 'عضو'
 end
-return send(msg_chat_id,msg_id,'\nرتبتك في البوت ↤ '..msg.Name_Controller..'\nرتبتك في القروب ↤ '..StatusMemberChat..'',"md",true)  
+return send(msg_chat_id,msg_id,'\nرتبتك↤ '..msg.Name_Controller..'',"md",true)  
 end
 if text == 'معلوماتي' or text == 'موقعي' then
 if ChannelJoinch(msg) == false then
@@ -13647,6 +13818,72 @@ end
 send(msg_chat_id,msg_id,'\n⇜ تم رفع ( '..y..' ) ادمنية ',"md",true)  
 end
 
+if
+Redis:get(TheMero.."Mero:Add:Lock:Groupbot"..msg_chat_id..":"..msg.sender_id.user_id) then
+if text == "الغاء" or text == "الغاء الامر" or text == "- الغـاء الامــر -" then
+Redis:del(TheMero.."Mero:Set:Add:Cmd"..msg.chat_id..msg.sender_id.user_id)
+Redis:del(TheMero.."Mero:Add:Lock:Groupbot"..msg_chat_id..":"..msg.sender_id.user_id)
+return send(msg_chat_id,msg_id, "*↢ تم الغاء الامر .. بنجاح *","md",true)
+end
+local textlock = Redis:get(TheMero.."Mero:Set:Add:Cmd"..msg.chat_id..msg.sender_id.user_id)
+if textlock == "ايدي" or textlock == "ا" or textlock == " id" or textlock == "Id" or textlock == "ID" then
+local textlook = "ايدي"
+if text == "العضو" then
+Redis:sadd(TheMero.."Mero:Developers:Cmd:Lock"..msg_chat_id,textlook)
+elseif text == "مالك المجموعة" or text == "مالك المجموعه" then
+Redis:sadd(TheMero.."Mero:Creator:Cmd:Lock"..msg_chat_id,textlook)
+elseif text == "مالك اساسي" then
+Redis:sadd(TheMero.."Mero:MalekAsase:Cmd:Lock"..msg_chat_id,textlook)
+elseif text == "مالك" then
+Redis:sadd(TheMero.."Mero:TheBasicsQ:Cmd:Lock"..msg_chat_id,textlook)
+elseif text == "منشئ اساسي" then
+Redis:sadd(TheMero.."Mero:TheBasics:Cmd:Lock"..msg_chat_id,textlook)
+elseif text == "منشئ" then
+Redis:sadd(TheMero.."Mero:Originators:Cmd:Lock"..msg_chat_id,textlook)
+elseif text == "مدير" then
+Redis:sadd(TheMero.."Mero:Managers:Cmd:Lock"..msg_chat_id,textlook)
+elseif text == "ادمن" then
+Redis:sadd(TheMero.."Mero:Addictive:Cmd:Lock"..msg_chat_id,textlook)
+elseif text == "مميز" then
+Redis:sadd(TheMero.."Mero:Distinguished:Cmd:Lock"..msg_chat_id,textlook)
+else
+Redis:del(TheMero.."Mero:Set:Add:Cmd"..msg.chat_id..msg.sender_id.user_id)
+Redis:del(TheMero.."Mero:Add:Lock:Groupbot"..msg_chat_id..":"..msg.sender_id.user_id) 
+return send(msg_chat_id,msg_id, "\n*↢ عذراً قم بارسال الرتبه لبصحيحه*\n*↢ قم بالاعادة مره اخرى عبر (قفل امر)*","md",true)
+end
+Redis:sadd(TheMero.."Mero:Text:Cmd:Lock"..msg_chat_id,textlook)
+else
+if text == "العضو" then
+Redis:sadd(TheMero.."Mero:Developers:Cmd:Lock"..msg_chat_id,textlock)
+elseif text == "مالك المجموعة" or text == "مالك المجموعه" then
+Redis:sadd(TheMero.."Mero:Creator:Cmd:Lock"..msg_chat_id,textlock)
+elseif text == "مالك اساسي" then
+Redis:sadd(TheMero.."Mero:MalekAsase:Cmd:Lock"..msg_chat_id,textlock)
+elseif text == "مالك" then
+Redis:sadd(TheMero.."Mero:TheBasicsQ:Cmd:Lock"..msg_chat_id,textlock)
+elseif text == "منشئ اساسي" then
+Redis:sadd(TheMero.."Mero:TheBasics:Cmd:Lock"..msg_chat_id,textlock)
+elseif text == "منشئ" then
+Redis:sadd(TheMero.."Mero:Originators:Cmd:Lock"..msg_chat_id,textlock)
+elseif text == "مدير" then
+Redis:sadd(TheMero.."Mero:Managers:Cmd:Lock"..msg_chat_id,textlock)
+elseif text == "ادمن" then
+Redis:sadd(TheMero.."Mero:Addictive:Cmd:Lock"..msg_chat_id,textlock)
+elseif text == "مميز" then
+Redis:sadd(TheMero.."Mero:Distinguished:Cmd:Lock"..msg_chat_id,textlock)
+else
+Redis:del(TheMero.."Mero:Set:Add:Cmd"..msg.chat_id..msg.sender_id.user_id)
+Redis:del(TheMero.."Mero:Add:Lock:Groupbot"..msg_chat_id..":"..msg.sender_id.user_id) 
+return send(msg_chat_id,msg_id, "\n*↢ عذراً قم بارسال الرتبه الصحيحه*\n*↢ قم بالاعادة مره اخرى عبر (قفل امر)*","md",true)
+end
+Redis:sadd(TheMero.."Mero:Text:Cmd:Lock"..msg_chat_id,textlock)
+end
+rootpa = text
+send(msg_chat_id,msg_id,"*↢ تم وضع امر ( *"..textlock.."* )\n↢ للرتبه ( *"..rootpa.."* ) فقط *","md",true)
+Redis:del(TheMero.."Mero:Set:Add:Cmd"..msg.chat_id..msg.sender_id.user_id)
+Redis:del(TheMero.."Mero:Add:Lock:Groupbot"..msg_chat_id..":"..msg.sender_id.user_id) 
+end
+
 if text == 'تغيير كليشه المالك' or text == 'تغيير كليشة المالك' or text == 'تغيير يوزر المالك' or text == 'تغيير المالك' then
 if not msg.Developers or (StatusMember == "chatMemberStatusCreator") then
 return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص ( '..Controller_Num(3)..' او مالك القروب ) ',"md",true)  
@@ -14152,7 +14389,7 @@ data = {
 {text = 'نعم ', data = msg.sender_id.user_id..'/Nzlne'},{text = 'لا', data = msg.sender_id.user_id..'/noNzlne'},
 },
 {
-{text = 'Louis', url = 't.me/Y88F8'}, 
+{text = '𝗗𝗲𝘃', url = 'tg://user?id=115976665'}, 
 },
 }
 }
@@ -17218,7 +17455,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis', url = 't.me/Y88F8'}, 
+{text = '𝗗𝗲𝘃', url = 'tg://user?id=115976665'}, 
 },
 }
 }
@@ -18777,14 +19014,14 @@ if ChannelJoin(msg) == false then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(TheMero..'Mero:Channel:Join:Name'), url = 't.me/'..Redis:get(TheMero..'Mero:Channel:Join')}, },}}
 return send(msg.chat_id,msg.id,'\n⇜ عليك الاشتراك في قناة البوت لاستخدام الاوامر',"md",false, false, false, false, reply_markup)
 end
-local Text ="- أهلاً بك في سورس لويس ."
+local Text ="- أهلاً بك في سورس ايلا ."
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'Zaid', url = 'https://t.me/DevZaid'},
+{text = '𝗦𝗼𝘂𝗿𝗰𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹', url = 'https://t.me/NOVA_SOURCE'},
 },
 {
-{text = 'Louis', url = 'https://t.me/Y88F8'}, 
+{text = '𝗗𝗲𝘃', url = 'https://tg://user?id=115976665'}, 
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -18816,7 +19053,7 @@ data = {
 }
 }
 return send(msg_chat_id,msg_id, [[
-*⤶ اهلين فيك بـ أوامر لويس
+*⤶ اهلين فيك بـ أوامر ايلا
 
 𝟏 ↢ اوامر الادارة 
 𝟐 ↢ اوامر الاعدادات
@@ -18825,7 +19062,7 @@ return send(msg_chat_id,msg_id, [[
 𝟓 ↢ اوامر الترفيه
 𝟔 ↢ اوامر الالعاب
 
-⌯ Master* [Zaid](T.me/DevZaid)
+➜* [𝗦𝗼𝘂𝗿𝗰𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹](T.me/NOVA_SOURCE)
 ]],"md",true, false, false, false, reply_markup)
 
 elseif text == 'اوامر المطور' then
@@ -19863,7 +20100,7 @@ if text and Redis:get(TheMero.."Set:Manager:rd:inline3am"..msg.sender_id.user_id
 Redis:set(TheMero.."Set:Manager:rd:inline3am"..msg.sender_id.user_id..":"..msg_chat_id, "set_link")
 local anubis = Redis:get(TheMero.."Text:Manager:inline3am"..msg.sender_id.user_id..":")
 Redis:set(TheMero.."Rd:Manager:inline3am:text"..anubis, text)
-send(msg_chat_id,msg_id,"⇜ الان ارسل الرابط \n⇜ مثال : [https://t.me/Y88F8]","md",true)
+send(msg_chat_id,msg_id,"⇜ الان ارسل الرابط \n⇜ مثال : [https://t.me/NOVA_SOURCE]","md",true)
 return false
 end
 if Redis:get(TheMero.."Set:Manager:rd:inline3am"..msg.sender_id.user_id..":"..msg_chat_id) == "true1" and tonumber(msg.sender_id.user_id) ~= tonumber(TheMero) then
@@ -20335,81 +20572,43 @@ else
 return send(msg_chat_id,msg_id,'\n⇜ لا استطيع تحميل اكثر من 50 ميغا',"md",true)
 end
 end
-
-if text and text:match("^رابط ساوند (.*)$") then
-local soundlink = text:match("^رابط ساوند (.*)$")
-if Redis:get(TheMero.."soshle"..msg.chat_id) then
-return false
-end
-if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
-return send(msg.chat_id,msg.id,"⇜ عذراً عزيزي الساوند للمميزين ومافوق فقط","md",true)
-end
-local nameuser = bot.getUser(msg.sender_id.user_id)
-if nameuser.first_name then
-nameuser = "["..nameuser.first_name.."](tg://user?id="..nameuser.id..")"
-else
-nameuser = 'لا يوجد اسم'
-end
-os.execute("yt-dlp "..soundlink.." --max-filesize 25M -o 'soundc.mp3'")
-local soufile = io.open("./soundc.mp3","r")
-if soufile then
-bot.sendAudio(msg_chat_id,msg_id,'./soundc.mp3',"- من قبل : "..nameuser.."️","md",nil,"soundc")
-sleep(1)
-os.remove("soundc.mp3")
-else
-return send(msg_chat_id,msg_id,'\n⇜ لا استطيع تحميل اكثر من 25 ميغا',"md",true)
-end
-end
-if text and text:match("^ساوند (.*)$") or text and text:match("^(.*) [Ss]$") then
-local search = text:match("^ساوند (.*)$") or text:match("^(.*) [Ss]$")
-if Redis:get(TheMero.."soshle"..msg.chat_id) then
-return false
-end
-if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
-return send(msg.chat_id,msg.id,"⇜ عذراً عزيزي الساوند للمميزين ومافوق فقط","md",true)
-end
-local jsonson = JSON.decode(request("https://anubis.fun/api/sound_search.php?q="..URL.escape(search)..""))
-Redis:del(TheMero.."soundidche"..msg.chat_id..msg.sender_id.user_id)
-Redis:set(TheMero.."soundidche"..msg.chat_id..msg.sender_id.user_id,search)
-local datar = {data = {{text = "Louis", url = 'https://t.me/Y88F8'}}}
-for i = 1,5 do
-titlee = jsonson.result[''..i..''].title
-link = jsonson.result[''..i..''].url
-link = tostring(link)
-link = link:gsub("https://soundcloud.com/",'') 
-datar[i] = {{text = titlee , data = search..":socl:"..link}}
-end
-local reply_markup = bot.replyMarkup{
-type = 'inline',
-data = datar
-}
-bot.sendText(msg.chat_id,msg.id,' نتائج بحثك على الساوند ل ( *'..search..'* )',"md",false, false, false, false, reply_markup)
-end
 if text and text:match("^بحث (.*)$") then
-local search = text:match("^بحث (.*)$")
-if Redis:get(TheMero.."youtubee"..msg.chat_id) then
-return false
+  local search = text:match("^بحث (.*)$")
+  if Redis:get(TheMero.."youtubee"..msg.chat_id) then
+    return false
+  end
+  if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
+    return send(msg.chat_id,msg.id,"↢ عذراً عزيزي اليوتيوب للمميزين ومافوق فقط","md",true)
+  end
+  
+  local api_url = "http://145.223.80.56:5010/Api-Search-YouTube?search="..URL.escape(search)
+  local response = request(api_url)
+  local jsonyou = JSON.decode(response)
+  
+  Redis:del(TheMero.."youtidche"..msg.chat_id..msg.sender_id.user_id)
+  Redis:set(TheMero.."youtidche"..msg.chat_id..msg.sender_id.user_id,search)
+  
+  local datar = {data = {{text = "🧚", url = 'https://t.me/NOVA_SOURCE'}}}
+  
+  for i = 1, math.min(5, #jsonyou) do
+    local video = jsonyou[i]
+    local titlee = video.title
+    local link = video.url
+    link = tostring(link)
+    link = link:gsub("https://www.youtube.com/watch%?v=", "") 
+    link = link:gsub("https://www.youtube.com/watch?v=", "")
+    
+    datar[i] = {{text = titlee, data = search..":yout:"..link}}
+  end
+  
+  local reply_markup = bot.replyMarkup{
+    type = 'inline',
+    data = datar
+  }
+  
+  bot.sendText(msg.chat_id, msg.id, '- نتائج بحثك على اليوتيوب ( *'..search..'* )', "md", false, false, false, false, reply_markup)
 end
-if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
-return send(msg.chat_id,msg.id,"⇜ عذراً عزيزي اليوتيوب للمميزين ومافوق فقط","md",true)
-end
-local jsonyou = JSON.decode(request("https://youtube-scrape.herokuapp.com/api/search?q="..URL.escape(search)..""))
-Redis:del(TheMero.."youtidche"..msg.chat_id..msg.sender_id.user_id)
-Redis:set(TheMero.."youtidche"..msg.chat_id..msg.sender_id.user_id,search)
-local datar = {data = {{text = "Louis", url = 'https://t.me/Y88F8'}}}
-for i = 1,5 do
-titlee = jsonyou.results[i].video.title
-link = jsonyou.results[i].video.url
-link = tostring(link)
-link = link:gsub("https://youtu.be/",'') 
-datar[i] = {{text = titlee , data = search..":yout:"..link}}
-end
-local reply_markup = bot.replyMarkup{
-type = 'inline',
-data = datar
-}
-bot.sendText(msg.chat_id,msg.id,' نتائج بحثك على اليوتيوب ل ( *'..search..'* )',"md",false, false, false, false, reply_markup)
-end
+
 ---------------------------------------------------------------------------------
 if text and text:match('^ضع تفاعل (%d+) (.*)$') or text and text:match('^وضع تفاعل (%d+) (.*)$') then
 if not msg.MalekAsase then
@@ -21027,7 +21226,7 @@ data = {
 {text = '0', data = msg.sender_id.user_id..'calc&0'},{text = '.', data = msg.sender_id.user_id..'calc&.'},{text = '+', data = msg.sender_id.user_id..'calc&+'},{text = '=', data = msg.sender_id.user_id..'equal'},
 },
 {
-{text = 'Louis', url = 't.me/Y88F8'}, 
+{text = '𝗗𝗲𝘃', url = 'tg://user?id=115976665'}, 
 },
 }
 }
@@ -21212,7 +21411,7 @@ end
 
 if text and Redis:get(TheMero.."add_meza:send:"..msg.chat_id..":"..msg.sender_id.user_id) == "link" then
 if not text:match('https://t.me/(.*)') then
-return send(msg.chat_id, msg.id,"⇜ الرابط خطأ \n⇜ ارسل الرابط مثل : https://t.me/Y88F8 ", 'md', true)
+return send(msg.chat_id, msg.id,"⇜ الرابط خطأ \n⇜ ارسل الرابط مثل : https://t.me/NOVA_SOURCE ", 'md', true)
 end
 Redis:del(TheMero.."add_meza:send:"..msg.chat_id..":"..msg.sender_id.user_id)
 local meza_name = Redis:get(TheMero.."add_meza:name:"..msg.chat_id..":"..msg.sender_id.user_id)
@@ -21280,7 +21479,7 @@ Redis:setex(TheMero.."hzergametime"..msg.chat_id,300,true)
 Redis:del(TheMero.."hazranswer"..msg.chat_id)
 Redis:del(TheMero.."hazrqustion"..msg.chat_id)
 Redis:del(TheMero.."listhzerid"..msg.chat_id)
-hazrwinerid = Redis:get(TheMero.."hazrwinerid"..msg.chat_id) or 5117901887
+hazrwinerid = Redis:get(TheMero.."hazrwinerid"..msg.chat_id) or 115976665
 local nameuser = bot.getUser(hazrwinerid)
 if nameuser.first_name then
 nameuser = "["..nameuser.first_name.."](tg://user?id="..nameuser.id..")"
@@ -21751,7 +21950,7 @@ type = 'inline',
 data = {
 {{text="• الغاء •",data="/DelChannelVip:"..msg.sender_id.user_id}},
 {{text="• اخفاء •",data="/HideChannelVip:"..msg.sender_id.user_id}},
-{{text='Louis',url="t.me/Y88F8"}}, 
+{{text='𝗗𝗲𝘃',url="tg://user?id=115976665"}}, 
 }
 }
 bot.sendText(msg_chat_id,msg_id,Text,"md",false, false, false, false, reply_markup)
@@ -21768,7 +21967,7 @@ type = 'inline',
 data = {
 {{text="• وضع قناتي •",data="/ChangeChannelVip:"..msg.sender_id.user_id}},
 {{text="• اخفاء •",data="/HideChannelVip:"..msg.sender_id.user_id}},
-{{text='Louis',url="t.me/Y88F8"}},
+{{text='𝗗𝗲𝘃',url="tg://user?id=115976665"}},
 }
 }
 bot.sendText(msg_chat_id,msg_id,Text,"md",false, false, false, false, reply_markup)
@@ -21781,7 +21980,7 @@ type = 'inline',
 data = {
 {{text="• وضع قناتي •",data="/ChangeChannelVip:"..msg.sender_id.user_id}},
 {{text="• اخفاء •",data="/HideChannelVip:"..msg.sender_id.user_id}},
-{{text='Louis',url="t.me/Y88F8"}},
+{{text='𝗗𝗲𝘃',url="tg://user?id=115976665"}},
 }
 }
 bot.sendText(msg_chat_id,msg_id,Text,"md",false, false, false, false, reply_markup)
@@ -21802,7 +22001,7 @@ type = 'inline',
 data = {
 {{text="• تغيير قناتي •",data="/ChangeChannelVip:"..msg.sender_id.user_id},{text="• مسح قناتي •",callback_data="/DelChannelVip:"..msg.sender_id.user_id}},
 {{text="• اخفاء •",data="/HideChannelVip:"..msg.sender_id.user_id}},
-{{text='Louis',url="t.me/Y88F8"}},
+{{text='𝗗𝗲𝘃',url="tg://user?id=115976665"}},
 }
 }
 bot.sendText(msg_chat_id,msg_id,text,"md",false, false, false, false, reply_markup)
@@ -21817,7 +22016,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text="• الغاء •",data="/CancelChannelVip:"..msg.sender_id.user_id}},
-{{text='Louis',url="t.me/Y88F8"}},
+{{text='𝗗𝗲𝘃',url="tg://user?id=115976665"}},
 }
 }
 bot.sendText(msg_chat_id,msg_id,text,"md",false, false, false, false, reply_markup)
@@ -22230,8 +22429,8 @@ Redis:set(TheMero.."keyboardmemb"..msg.sender_id.user_id,true)
 Redis:sadd(TheMero..'Mero:Num:User:Pv',msg.sender_id.user_id)
 if not msg.ControllerBot then
 if not Redis:get(TheMero.."Mero:Start:Bot") then
-local CmdStart = '\n⇜ أهلاً بك عزيزي انا بوت اسمي '..(Redis:get(TheMero.."Mero:Name:Bot") or "لويس")..
-'\n⇜ اختصاص البوت حماية المجموعات\n⇜ بعض من مميزاتي 🧚🏼‍♀️.\n{ العاب مثل كلمات والخ .. ، تيك ، ساوند ، يوتيوب ، والكثير من مميزات اكتشفوها بنفسكم من خلال الاوامر او تابع تحديثات البوت ↤ @Y88F8 .'..
+local CmdStart = '\n⇜ أهلاً بك عزيزي انا بوت اسمي '..(Redis:get(TheMero.."Mero:Name:Bot") or "ايلا")..
+'\n⇜ اختصاص البوت حماية المجموعات\n⇜ بعض من مميزاتي 🧚🏼‍♀️.\n{ العاب مثل كلمات والخ .. ، تيك ، ساوند ، يوتيوب ، والكثير من مميزات اكتشفوها بنفسكم من خلال الاوامر .'..
 '\n• مطور البوت ↤ [@'..UserSudo..']'
 local reply_markupp = bot.replyMarkup{
 type = 'inline',
@@ -22240,7 +22439,7 @@ data = {
 {text = 'اضفني لقروبك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = 'Louis', url = 't.me/Y88F8'}, 
+{text = '𝗗𝗲𝘃', url = 'tg://user?id=115976665'}, 
 },
 }
 }

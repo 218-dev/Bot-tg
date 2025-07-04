@@ -7,7 +7,7 @@ msg_chat_id = msg.chat_id
 msg_id = msg.id
 msg_reply_id = msg.reply_to_message_id
 msg_user_send_id = msg.sender_id.user_id
-Bot_Name = (Redis:get(TheMero.."Mero:Name:Bot") or "لويس")
+Bot_Name = (Redis:get(TheMero.."Mero:Name:Bot") or "ايلا")
 if text and text:match('^'..Bot_Name..' ') then
 text = text:gsub('^'..Bot_Name..' ','')
 end
@@ -457,7 +457,7 @@ data = {
 {
 {text = 'ماستر', data = msg.sender_id.user_id..'/master'},{text = 'فيزا', data = msg.sender_id.user_id..'/visaa'},{text = 'اكسبرس', data = msg.sender_id.user_id..'/express'},
 },
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘',url="t.me/NOVA_SOURCE"}, 
 }
 }
 return send(msg.chat_id,msg.id,ttshakse,"md",false, false, false, false, reply_markup)
@@ -614,7 +614,7 @@ if tonumber(ballancee) < 1 then
 return send(msg.chat_id,msg.id, "⇜ ماعندك فلوس \n✧","md",true)
 end
 local convert_mony = string.format("%.0f",ballancee)
-send(msg.chat_id,msg.id, "⇜ فلوسك `"..convert_mony.."`  ريال 💵","md",true)
+send(msg.chat_id,msg.id, "⇜ فلوسك `"..convert_mony.."`  دينار 💵","md",true)
 else
 send(msg.chat_id,msg.id, "⇜ ماعندك حساب بنكي ارسل ↢ ( `انشاء حساب بنكي` )","md",true)
 end
@@ -632,7 +632,7 @@ end
 if Redis:sismember(TheMero.."booob",UserId_Info.id) then
 ballanceed = Redis:get(TheMero.."boob"..UserId_Info.id) or 0
 local convert_mony = string.format("%.0f",ballanceed)
-send(msg.chat_id,msg.id, "⇜ فلوسه `"..convert_mony.."` ريال 💵","md",true)
+send(msg.chat_id,msg.id, "⇜ فلوسه `"..convert_mony.."` دينار 💵","md",true)
 else
 send(msg.chat_id,msg.id, "⇜ ماعنده حساب بنكي ","md",true)
 end
@@ -642,13 +642,13 @@ if text == 'فلوسه' or text == 'فلوس' and tonumber(msg.reply_to_message_
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
-send(msg.chat_id,msg.id,"\n⇜ لويس ماعندها حساب بالبنك ","md",true)  
+send(msg.chat_id,msg.id,"\n⇜ ايلا ماعندها حساب بالبنك ","md",true)  
 return false
 end
 if Redis:sismember(TheMero.."booob",Remsg.sender_id.user_id) then
 ballanceed = Redis:get(TheMero.."boob"..Remsg.sender_id.user_id) or 0
 local convert_mony = string.format("%.0f",ballanceed)
-send(msg.chat_id,msg.id, "⇜ فلوسه `"..convert_mony.."` ريال 💵","md",true)
+send(msg.chat_id,msg.id, "⇜ فلوسه `"..convert_mony.."` دينار 💵","md",true)
 else
 send(msg.chat_id,msg.id, "⇜ ماعنده حساب بنكي ","md",true)
 end
@@ -674,7 +674,7 @@ shkseemg = "طيبة 😇"
 else
 shkseemg = "شريرة 😈"
 end
-send(msg.chat_id,msg.id, "⇜ الاسم ↤ "..news.."\n⇜ الحساب ↤ `"..cccc.."`\n⇜ بنك ↤ ❲ لويس ❳\n⇜ نوع ↤ ❲ "..uuuu.." ❳\n⇜ الرصيد ↤ ❲ "..convert_mony.." ريال 💵 ❳\n⇜ الزرف ❲ "..math.floor(pppp).." ريال 💵 ❳\n⇜ شخصيتك ↤ ❲ "..shkseemg.." ❳\n⇜ دولتك ↤ ❲ "..doltebank.." ❳","md",true)
+send(msg.chat_id,msg.id, "⇜ الاسم ↤ "..news.."\n⇜ الحساب ↤ `"..cccc.."`\n⇜ بنك ↤ ❲ ايلا ❳\n⇜ نوع ↤ ❲ "..uuuu.." ❳\n⇜ الرصيد ↤ ❲ "..convert_mony.." دينار 💵 ❳\n⇜ الزرف ❲ "..math.floor(pppp).." دينار 💵 ❳\n⇜ شخصيتك ↤ ❲ "..shkseemg.." ❳\n⇜ دولتك ↤ ❲ "..doltebank.." ❳","md",true)
 else
 send(msg.chat_id,msg.id, "⇜ ماعندك حساب بنكي ارسل ↢ ( `انشاء حساب بنكي` )","md",true)
 end
@@ -684,7 +684,7 @@ if msg.ControllerBot then
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
-send(msg.chat_id,msg.id,"\n⇜ لويس ماعندها حساب بالبنك ","md",true)  
+send(msg.chat_id,msg.id,"\n⇜ ايلا ماعندها حساب بالبنك ","md",true)  
 return false
 end
 local ban = bot.getUser(Remsg.sender_id.user_id)
@@ -847,7 +847,7 @@ Redis:del(TheMero.."priceplayer".."5"..Remsg.sender_id.user_id)
 Redis:srem(TheMero.."lkbnadesadd", namenad)
 Redis:srem(TheMero.."ownernade",Remsg.sender_id.user_id)
 Redis:del(TheMero.."lkbnade"..Remsg.sender_id.user_id)
-send(msg.chat_id,msg.id, "⇜ الاسم ↤ "..news.."\n⇜ الحساب ↤ `"..ccccc.."`\n⇜ بنك ↤ ❲ لويس ❳\n⇜ نوع ❲ "..uuuuu.." ❳\n⇜ الرصيد ↤ ❲ "..convert_mony.." ريال 💵 ❳\n⇜ الزرف ↤ ❲ "..math.floor(ppppp).." ريال 💵 ❳\n⇜ مسكين مسحت حسابه","md",true)
+send(msg.chat_id,msg.id, "⇜ الاسم ↤ "..news.."\n⇜ الحساب ↤ `"..ccccc.."`\n⇜ بنك ↤ ❲ ايلا ❳\n⇜ نوع ❲ "..uuuuu.." ❳\n⇜ الرصيد ↤ ❲ "..convert_mony.." دينار 💵 ❳\n⇜ الزرف ↤ ❲ "..math.floor(ppppp).." دينار 💵 ❳\n⇜ مسكين مسحت حسابه","md",true)
 else
 send(msg.chat_id,msg.id, "⇜ ماعنده حساب بنكي اصلاً ","md",true)
 end
@@ -858,7 +858,7 @@ if text == 'حسابه' and tonumber(msg.reply_to_message_id) ~= 0 then
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
-send(msg.chat_id,msg.id,"\n⇜ لويس ماعندها حساب بالبنك ","md",true)  
+send(msg.chat_id,msg.id,"\n⇜ ايلا ماعندها حساب بالبنك ","md",true)  
 return false
 end
 local ban = bot.getUser(Remsg.sender_id.user_id)
@@ -880,7 +880,7 @@ shkseemg = "طيبة 😇"
 else
 shkseemg = "شريرة 😈"
 end
-send(msg.chat_id,msg.id, "⇜ الاسم ↤ "..news.."\n⇜ الحساب ↤ `"..ccccc.."`\n⇜ بنك ↤ ❲ لويس ❳\n⇜ نوع ↤ ❲ "..uuuuu.." ❳\n⇜ الرصيد ↤ ❲ "..convert_mony.." ريال 💵 ❳\n⇜ الزرف ↤ ❲ "..math.floor(ppppp).." ريال 💵 ❳\n⇜ شخصيتك ↤ ❲ "..shkseemg.." ❳\n⇜ دولتك ↤ ❲ "..doltebank.." ❳ ","md",true)
+send(msg.chat_id,msg.id, "⇜ الاسم ↤ "..news.."\n⇜ الحساب ↤ `"..ccccc.."`\n⇜ بنك ↤ ❲ ايلا ❳\n⇜ نوع ↤ ❲ "..uuuuu.." ❳\n⇜ الرصيد ↤ ❲ "..convert_mony.." دينار 💵 ❳\n⇜ الزرف ↤ ❲ "..math.floor(ppppp).." دينار 💵 ❳\n⇜ شخصيتك ↤ ❲ "..shkseemg.." ❳\n⇜ دولتك ↤ ❲ "..doltebank.." ❳ ","md",true)
 else
 send(msg.chat_id,msg.id, "⇜ ماعنده حساب بنكي ","md",true)
 end
@@ -1074,7 +1074,7 @@ Redis:del(TheMero.."priceplayer".."5"..coniss)
 Redis:srem(TheMero.."lkbnadesadd", namenad)
 Redis:srem(TheMero.."ownernade",coniss)
 Redis:del(TheMero.."lkbnade"..coniss)
-send(msg.chat_id,msg.id, "⇜ الاسم ↤ "..news.."\n⇜ الحساب ↤ `"..ccccc.."`\n⇜ بنك ↤ ❲ لويس ❳\n⇜ نوع ↤ ❲ "..uuuuu.." ❳\n⇜ الرصيد ↤ ❲ "..convert_mony.." ❳ ريال 💵 )\n⇜ الزرف ↤ ❲ "..math.floor(ppppp).." ريال 💵 ❳\n⇜ مسكين مسحت حسابه","md",true)
+send(msg.chat_id,msg.id, "⇜ الاسم ↤ "..news.."\n⇜ الحساب ↤ `"..ccccc.."`\n⇜ بنك ↤ ❲ ايلا ❳\n⇜ نوع ↤ ❲ "..uuuuu.." ❳\n⇜ الرصيد ↤ ❲ "..convert_mony.." ❳ دينار 💵 )\n⇜ الزرف ↤ ❲ "..math.floor(ppppp).." دينار 💵 ❳\n⇜ مسكين مسحت حسابه","md",true)
 else
 send(msg.chat_id,msg.id, "⇜ ماعنده حساب بنكي اصلاً ","md",true)
 end
@@ -1098,7 +1098,7 @@ shkseemg = "طيبة 😇"
 else
 shkseemg = "شريرة 😈"
 end
-send(msg.chat_id,msg.id, "⇜ الاسم ↤ "..yty.."\n⇜ الحساب ↤ `"..coniss.."`\n⇜ بنك ↤ ❲ لويس ❳\n⇜ نوع ↤ ❲ "..fsvhh.." ❳\n⇜ الرصيد ↤ ❲ "..convert_mony.." ريال 💵 ❳\n⇜ شخصيتك ↤ ❲ "..shkseemg.." ❳\n⇜ دولتك ↤ ❲ "..doltebank.." ❳","md",true)
+send(msg.chat_id,msg.id, "⇜ الاسم ↤ "..yty.."\n⇜ الحساب ↤ `"..coniss.."`\n⇜ بنك ↤ ❲ ايلا ❳\n⇜ نوع ↤ ❲ "..fsvhh.." ❳\n⇜ الرصيد ↤ ❲ "..convert_mony.." دينار 💵 ❳\n⇜ شخصيتك ↤ ❲ "..shkseemg.." ❳\n⇜ دولتك ↤ ❲ "..doltebank.." ❳","md",true)
 else
 send(msg.chat_id,msg.id, "⇜ مافيه حساب بنكي كذا","md",true)
 end
@@ -1122,7 +1122,7 @@ cobonplus = tonumber(ballancee) + Number
 Redis:set(TheMero.."boob"..msg.sender_id.user_id , cobonplus)
 local UserInfoo = bot.getUser(msg.sender_id.user_id)
 local GetName = '- ['..UserInfoo.first_name..'](tg://user?id='..msg.sender_id.user_id..')'
-return send(msg.chat_id,msg.id,GetName.."\n\n⇜ مبروك كشطتها واخذت ↤ "..Number.. " ريال 💵\n✧","md",true)
+return send(msg.chat_id,msg.id,GetName.."\n\n⇜ مبروك كشطتها واخذت ↤ "..Number.. " دينار 💵\n✧","md",true)
 else
 send(msg.chat_id,msg.id, "⇜ ماعندك حساب بنكي ","md",true)
 end
@@ -1226,7 +1226,7 @@ return send(msg.chat_id,msg.id,"⇜ مايمديك تضارب الحين\n⇜ ت
 end
 ballancee = Redis:get(TheMero.."boob"..msg.sender_id.user_id) or 0
 if tonumber(coniss) < 99 then
-return send(msg.chat_id,msg.id, "⇜ الحد الادنى المسموح هو 100 ريال 💵\n✧","md",true)
+return send(msg.chat_id,msg.id, "⇜ الحد الادنى المسموح هو 100 دينار 💵\n✧","md",true)
 end
 if tonumber(ballancee) < tonumber(coniss) then
 return send(msg.chat_id,msg.id, "⇜ فلوسك ماتكفي \n✧","md",true)
@@ -1241,7 +1241,7 @@ local convert_mony = string.format("%.0f",ballanceekku)
 local convert_mony1 = string.format("%.0f",ballanceekkku)
 Redis:set(TheMero.."boob"..msg.sender_id.user_id , math.floor(ballanceekkku))
 Redis:setex(TheMero.."iiooooo" .. msg.sender_id.user_id,900, true)
-send(msg.chat_id,msg.id, "⇜ مضاربة فاشلة 📉\n⇜ نسبة الخسارة ↤ "..modarbaa.."%\n⇜ المبلغ الذي خسرته ↤ ❲ "..convert_mony.." ريال 💵 ❳\n⇜ فلوسك صارت ↤ ❲ "..convert_mony1.." ريال 💵 ❳\n✧","md",true)
+send(msg.chat_id,msg.id, "⇜ مضاربة فاشلة 📉\n⇜ نسبة الخسارة ↤ "..modarbaa.."%\n⇜ المبلغ الذي خسرته ↤ ❲ "..convert_mony.." دينار 💵 ❳\n⇜ فلوسك صارت ↤ ❲ "..convert_mony1.." دينار 💵 ❳\n✧","md",true)
 else
 ballanceekku = coniss / 100 * modarbaa
 ballanceekkku = ballancee + ballanceekku
@@ -1249,7 +1249,7 @@ local convert_mony = string.format("%.0f",ballanceekku)
 local convert_mony1 = string.format("%.0f",ballanceekkku)
 Redis:set(TheMero.."boob"..msg.sender_id.user_id , math.floor(ballanceekkku))
 Redis:setex(TheMero.."iiooooo" .. msg.sender_id.user_id,900, true)
-send(msg.chat_id,msg.id, "⇜ مضاربة ناجحة 📈\n⇜ نسبة الربح ↤ "..modarbaa.."%\n⇜ المبلغ الذي ربحته ↤ ❲ "..convert_mony.." ريال 💵 ❳\n⇜ فلوسك صارت ↤ ❲ "..convert_mony1.." ريال 💵 ❳\n✧","md",true)
+send(msg.chat_id,msg.id, "⇜ مضاربة ناجحة 📈\n⇜ نسبة الربح ↤ "..modarbaa.."%\n⇜ المبلغ الذي ربحته ↤ ❲ "..convert_mony.." دينار 💵 ❳\n⇜ فلوسك صارت ↤ ❲ "..convert_mony1.." دينار 💵 ❳\n✧","md",true)
 end
 else
 send(msg.chat_id,msg.id, "⇜ ماعندك حساب بنكي ارسل ↢ ( `انشاء حساب بنكي` )","md",true)
@@ -1280,7 +1280,7 @@ return send(msg.chat_id,msg.id,"⇜ مايمديك تستثمر الحين\n⇜ 
 end
 ballancee = Redis:get(TheMero.."boob"..msg.sender_id.user_id) or 0
 if tonumber(coniss) < 99 then
-return send(msg.chat_id,msg.id, "⇜ الحد الادنى المسموح هو 100 ريال 💵\n✧","md",true)
+return send(msg.chat_id,msg.id, "⇜ الحد الادنى المسموح هو 100 دينار 💵\n✧","md",true)
 end
 if tonumber(ballancee) < tonumber(coniss) then
 return send(msg.chat_id,msg.id, "⇜ فلوسك ماتكفي \n✧","md",true)
@@ -1292,7 +1292,7 @@ local convert_mony = string.format("%.0f",ballanceekk)
 local convert_mony1 = string.format("%.0f",ballanceekkk)
 Redis:set(TheMero.."boob"..msg.sender_id.user_id , math.floor(ballanceekkk))
 Redis:setex(TheMero.."iioooo" .. msg.sender_id.user_id,1200, true)
-send(msg.chat_id,msg.id, "⇜ استثمار ناجح 💰\n⇜ نسبة الربح ↤ "..hadddd.."%\n⇜ مبلغ الربح ↤ ❲ "..convert_mony.." ريال 💵 ❳\n⇜ فلوسك صارت ↤ ❲ "..convert_mony1.." ريال 💵 ❳\n✧","md",true)
+send(msg.chat_id,msg.id, "⇜ استثمار ناجح 💰\n⇜ نسبة الربح ↤ "..hadddd.."%\n⇜ مبلغ الربح ↤ ❲ "..convert_mony.." دينار 💵 ❳\n⇜ فلوسك صارت ↤ ❲ "..convert_mony1.." دينار 💵 ❳\n✧","md",true)
 else
 send(msg.chat_id,msg.id, "⇜ ماعندك حساب بنكي ارسل ↢ ( `انشاء حساب بنكي` )","md",true)
 end
@@ -1328,7 +1328,7 @@ return send(msg.chat_id,msg.id,"⇜ مايمديك تلعب حظ الحين\n⇜
 end
 ballancee = Redis:get(TheMero.."boob"..msg.sender_id.user_id) or 0
 if tonumber(coniss) < 99 then
-return send(msg.chat_id,msg.id, "⇜ الحد الادنى المسموح هو 100 ريال 💵\n✧","md",true)
+return send(msg.chat_id,msg.id, "⇜ الحد الادنى المسموح هو 100 دينار 💵\n✧","md",true)
 end
 if tonumber(ballancee) < tonumber(coniss) then
 return send(msg.chat_id,msg.id, "⇜ فلوسك ماتكفي \n✧","md",true)
@@ -1350,7 +1350,7 @@ local convert_mony = string.format("%.0f",ballancee)
 local convert_mony1 = string.format("%.0f",ballanceek)
 Redis:set(TheMero.."boob"..msg.sender_id.user_id , math.floor(ballanceek))
 Redis:setex(TheMero.."iiooo" .. msg.sender_id.user_id,900, true)
-send(msg.chat_id,msg.id, "⇜ مبروك فزت بالحظ 🎉\n⇜ فلوسك قبل ↤ ❲ "..convert_mony.." ريال 💵 ❳\n⇜ رصيدك الان ↤ ❲ `"..convert_mony1.."` ريال 💵 ❳\n✧","md",true)
+send(msg.chat_id,msg.id, "⇜ مبروك فزت بالحظ 🎉\n⇜ فلوسك قبل ↤ ❲ "..convert_mony.." دينار 💵 ❳\n⇜ رصيدك الان ↤ ❲ `"..convert_mony1.."` دينار 💵 ❳\n✧","md",true)
 else
 local ballanceekk = ballancee - coniss
 local convert_mony = string.format("%.0f",ballancee)
@@ -1448,8 +1448,8 @@ decdecb = Redis:get(TheMero.."boob"..fsvhhh) or 0
 deccde2 = decdecb + UserNameyy
 Redis:set(TheMero.."boob"..fsvhhh , math.floor(deccde2))
 Redis:setex(TheMero.."tanstime" .. msg.sender_id.user_id,1800, true)
-send(msg.chat_id,msg.id, "⇜ حوالة صادرة من بنك لويس\n\n⇜ المرسل ↤ "..news.."\n⇜ الحساب رقم ↤ `"..cccc.."`\n⇜ نوع البطاقة ↤ "..uuuu.."\n⇜ المستلم ↤ "..newss.."\n⇜ الحساب رقم ↤ `"..text.."`\n⇜ نوع البطاقة ↤ "..fsvhh.."\n⇜ خصمت 10% رسوم تحويل\n⇜ المبلغ ↤ "..convert_mony.." ريال 💵","md",true)
-send(fsvhhh,0, "⌯ حوالة واردة من بنك لويس\n\n⇜ المرسل ↤ "..news.."\n⇜ الحساب رقم ↤ `"..cccc.."`\n⇜ نوع البطاقة ↤ "..uuuu.."\n⇜ المبلغ ↤ "..convert_mony.." ريال 💵","md",true)
+send(msg.chat_id,msg.id, "⇜ حوالة صادرة من بنك ايلا\n\n⇜ المرسل ↤ "..news.."\n⇜ الحساب رقم ↤ `"..cccc.."`\n⇜ نوع البطاقة ↤ "..uuuu.."\n⇜ المستلم ↤ "..newss.."\n⇜ الحساب رقم ↤ `"..text.."`\n⇜ نوع البطاقة ↤ "..fsvhh.."\n⇜ خصمت 10% رسوم تحويل\n⇜ المبلغ ↤ "..convert_mony.." دينار 💵","md",true)
+send(fsvhhh,0, "⌯ حوالة واردة من بنك ايلا\n\n⇜ المرسل ↤ "..news.."\n⇜ الحساب رقم ↤ `"..cccc.."`\n⇜ نوع البطاقة ↤ "..uuuu.."\n⇜ المبلغ ↤ "..convert_mony.." دينار 💵","md",true)
 Redis:del(TheMero.."trans" .. msg.chat_id .. ":" .. msg.sender_id.user_id) 
 Redis:del(TheMero.."transn" .. msg.sender_id.user_id)
 else
@@ -1483,7 +1483,7 @@ if text == "ترتيبه" and tonumber(msg.reply_to_message_id) ~= 0 then
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
-send(msg.chat_id,msg.id,"\n⇜ لويس ماعندها حساب بالبنك ","md",true)  
+send(msg.chat_id,msg.id,"\n⇜ ايلا ماعندها حساب بالبنك ","md",true)  
 return false
 end
 if Redis:sismember(TheMero.."booob",Remsg.sender_id.user_id) then
@@ -1534,7 +1534,7 @@ day = "يوم واحد"
 else
 day = " لم يحدد الوقت "
 end
-local toptop = "⇜ أهلين يا روح لويس هذي أوامري :\n⇜ اختر نوع التوب من الازرار\n\n⇜ تتصفر اللعبة بعد ↤ "..day.."\n✧"
+local toptop = "⇜ أهلين يا روح ايلا هذي أوامري :\n⇜ اختر نوع التوب من الازرار\n\n⇜ تتصفر اللعبة بعد ↤ "..day.."\n✧"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
@@ -1551,7 +1551,7 @@ data = {
 {text = 'اخفاء', data = msg.sender_id.user_id..'/delAmr'}, 
 },
 {
-{text = 'Louis', url="t.me/Y88F8"},
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘', url="t.me/NOVA_SOURCE"},
 },
 }
 }
@@ -1657,7 +1657,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis', url="t.me/Y88F8"},
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘', url="t.me/NOVA_SOURCE"},
 },
 }
 }
@@ -1763,7 +1763,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis', url="t.me/Y88F8"},
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘', url="t.me/NOVA_SOURCE"},
 },
 }
 }
@@ -1845,7 +1845,7 @@ end
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
-send(msg.chat_id,msg.id,"\n⇜ لويس ماعندها حساب بالبنك 🤣","md",true)
+send(msg.chat_id,msg.id,"\n⇜ ايلا ماعندها حساب بالبنك 🤣","md",true)
 return false
 end
 if Remsg.sender_id.user_id == msg.sender_id.user_id then
@@ -1922,7 +1922,7 @@ end
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
-send(msg.chat_id,msg.id,"\n⇜ لويس ماعندها حساب بالبنك 🤣","md",true)
+send(msg.chat_id,msg.id,"\n⇜ ايلا ماعندها حساب بالبنك 🤣","md",true)
 return false
 end
 local hrameid = Redis:get(TheMero.."hrameid"..msg.chat_id..msg.sender_id.user_id)
@@ -2555,7 +2555,7 @@ end
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
-send(msg.chat_id,msg.id,"\n⇜ لويس ماعندها حساب بالبنك 🤣","md",true)  
+send(msg.chat_id,msg.id,"\n⇜ ايلا ماعندها حساب بالبنك 🤣","md",true)  
 return false
 end
 if Remsg.sender_id.user_id == msg.sender_id.user_id then
@@ -2655,7 +2655,7 @@ if text == "المعرض" or text == "معرض" then
 
 Redis:setex(TheMero.."marad" .. msg.chat_id .. ":" .. msg.sender_id.user_id,60, true)
 send(msg.chat_id,msg.id,[[
-– اهلين فيك بمعرض لويس
+– اهلين فيك بمعرض ايلا
 - يتوفر لدينا حالياً :
 
 ⇠ `سيارات`  🚗
@@ -4960,7 +4960,7 @@ end
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
-send(msg.chat_id,msg.id,"\n⇜ لويس مو للزواج 🤣","md",true)  
+send(msg.chat_id,msg.id,"\n⇜ ايلا مو للزواج 🤣","md",true)  
 return false
 end
 if Redis:get(TheMero.."roog1"..msg.sender_id.user_id) then
@@ -5071,7 +5071,7 @@ gg = "\n\n⇜ ملاحظة : اي شخص مخالف للعبة بالغش او �
 type = 'inline',
 data = {
 {
-{text = 'Louis', url="t.me/Y88F8"},
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘', url="t.me/NOVA_SOURCE"},
 },
 }
 }
@@ -5186,7 +5186,7 @@ gg = "\n\n⇜ ملاحظة : اي شخص مخالف للعبة بالغش او �
 type = 'inline',
 data = {
 {
-{text = 'Louis', url="t.me/Y88F8"},
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘', url="t.me/NOVA_SOURCE"},
 },
 }
 }
@@ -5233,7 +5233,7 @@ end
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
-send(msg.chat_id,msg.id,"\n⇜ لويس مو متزوجه ","md",true)  
+send(msg.chat_id,msg.id,"\n⇜ ايلا مو متزوجه ","md",true)  
 return false
 end
 local zoog = Redis:get(TheMero.."roog1"..Remsg.sender_id.user_id)
@@ -5505,7 +5505,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis', url="t.me/Y88F8"},
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘', url="t.me/NOVA_SOURCE"},
 },
 }
 }
@@ -5530,7 +5530,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'ريال مدريد', data = msg.sender_id.user_id..'/realm'},{text = 'برشلونة', data = msg.sender_id.user_id..'/barca'},{text = 'تشيلسي', data = msg.sender_id.user_id..'/chels'},
+{text = 'دينار مدريد', data = msg.sender_id.user_id..'/realm'},{text = 'برشلونة', data = msg.sender_id.user_id..'/barca'},{text = 'تشيلسي', data = msg.sender_id.user_id..'/chels'},
 },
 {
 {text = 'مانشستر يونايتد', data = msg.sender_id.user_id..'/manun'},{text = 'ليفربول', data = msg.sender_id.user_id..'/livb'},{text = 'انتر ميلان', data = msg.sender_id.user_id..'/intmi'},
@@ -5539,7 +5539,7 @@ data = {
 {text = 'مانشستر سيتي', data = msg.sender_id.user_id..'/manci'},{text = 'يوفنتس', data = msg.sender_id.user_id..'/juvin'},{text = 'ارسنال', data = msg.sender_id.user_id..'/arsi'}, 
 },
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘',url="t.me/NOVA_SOURCE"}, 
 },
 }
 }
@@ -5897,7 +5897,7 @@ if Redis:sismember(TheMero.."booob",msg.sender_id.user_id) then
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
-send(msg.chat_id,msg.id,"\n⇜ لويس ماعندها نادي ","md",true)
+send(msg.chat_id,msg.id,"\n⇜ ايلا ماعندها نادي ","md",true)
 return false
 end
 if not Redis:get(TheMero.."namenade" .. Remsg.sender_id.user_id) then
@@ -5997,7 +5997,7 @@ local resultt = {"0 - 1", "0 - 2", "0 - 3", "0 - 4", "0 - 5", "1 - 2", "1 - 3", 
 local result = resultt[math.random(#resultt)]
 local tadoll = {"0 - 0", "1 - 1", "2 - 2", "3 - 3", "4 - 4", "5 - 5",}
 local tadol = tadoll[math.random(#tadoll)]
-local nadebott = {"اشبيلية", "ريفر بلايت", "ريفر بلايت", "بوروسيا", "أياكس الهولندي", "ليون", "شاختار دونيتسك", "روما", "فياريال", "بوكا جونيورز", "نابولي", "بنفيكا", "فلامنجو", "ليستر سيتي", "بالمرسي", "ليل", "ريال سوسيداد", "ايندهوفن", "الأهلي المصري", "الهلال السعودي", "الاتحاد السعودي",}
+local nadebott = {"اشبيلية", "ريفر بلايت", "ريفر بلايت", "بوروسيا", "أياكس الهولندي", "ليون", "شاختار دونيتسك", "روما", "فيادينار", "بوكا جونيورز", "نابولي", "بنفيكا", "فلامنجو", "ليستر سيتي", "بالمرسي", "ليل", "دينار سوسيداد", "ايندهوفن", "الأهلي المصري", "الهلال السعودي", "الاتحاد السعودي",}
 local nadebot = nadebott[math.random(#nadebott)]
 if energymynade > tonumber(energybot) then
 ballance = Redis:get(TheMero.."boob"..msg.sender_id.user_id) or 0
@@ -6037,7 +6037,7 @@ end
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
-send(msg.chat_id,msg.id,"\n⇜ لويس ماعندها نادي ","md",true)
+send(msg.chat_id,msg.id,"\n⇜ ايلا ماعندها نادي ","md",true)
 return false
 end
 if Remsg.sender_id.user_id == msg.sender_id.user_id then
@@ -6232,7 +6232,7 @@ Redis:setex(TheMero.."buyplayer" .. msg.sender_id.user_id,900, true)
 local Textinggt = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50",}
 local Descriptioont = Textinggt[math.random(#Textinggt)]
 if Descriptioont == "1" then
-msgplayer = "⇜ الاسم : لويس سواريز\n⇜ مركزه : مهاجم ايمن\n⇜ طاقة اللاعب : 83\n⇜ الجنسية : اوكرانيا 🇺🇦\n⇜ سعر اللاعب : 39000 درهم 💵\n هل ترغب بشراء اللاعب ؟\n✧"
+msgplayer = "⇜ الاسم : ايلا سواريز\n⇜ مركزه : مهاجم ايمن\n⇜ طاقة اللاعب : 83\n⇜ الجنسية : اوكرانيا 🇺🇦\n⇜ سعر اللاعب : 39000 درهم 💵\n هل ترغب بشراء اللاعب ؟\n✧"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
@@ -6812,7 +6812,7 @@ data = {
 {text = '12×12', data = msg.sender_id.user_id..'/12×12'},{text = '16×16', data = msg.sender_id.user_id..'/16×16'},{text = '32×32', data = msg.sender_id.user_id..'/32×32'},
 },
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘',url="t.me/NOVA_SOURCE"}, 
 },
 }
 }
@@ -6906,7 +6906,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis', url="t.me/Y88F8"},
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘', url="t.me/NOVA_SOURCE"},
 },
 }
 }
@@ -6914,7 +6914,7 @@ return send(msg.chat_id,msg.id,top_monyd..gg,"md",false, false, false, false, re
 end
 if text == 'مزرعه' or text == 'مزرعة' then
 if Redis:sismember(TheMero.."booob",msg.sender_id.user_id) then
-send(msg.chat_id,msg.id, "⌯ اهلا فيك بمزرعة لويس :\n\n⇜ المزروعات واسعارها :\n- بطاطا : 75 درهم 💵\n- بندوره : 100 درهم 💵\n- خس : 125 درهم 💵\n- خيار : 150 درهم 💵\n- جزر : 175 درهم 💵\n- فليفله : 200 درهم 💵\n- فريز : 300 درهم 💵\n- ذره : 400 درهم 💵\n- ثوم : 500 درهم 💵\n- فطر : 800 درهم 💵\n- شجره تفاح : 1000 درهم 💵\n- شجره عنب : 1250 درهم 💵\n-شجره زيتون : 1500 درهم 💵\n- شجره موز : 2000 درهم 💵\n- شجره مانجا : 3000 درهم 💵\n\n⇜ مثال طريقة الزراعه : \n- زراعه بطاطا 10\n- زراعه شجر موز 15\n✧","md",true)
+send(msg.chat_id,msg.id, "⌯ اهلا فيك بمزرعة ايلا :\n\n⇜ المزروعات واسعارها :\n- بطاطا : 75 درهم 💵\n- بندوره : 100 درهم 💵\n- خس : 125 درهم 💵\n- خيار : 150 درهم 💵\n- جزر : 175 درهم 💵\n- فليفله : 200 درهم 💵\n- فريز : 300 درهم 💵\n- ذره : 400 درهم 💵\n- ثوم : 500 درهم 💵\n- فطر : 800 درهم 💵\n- شجره تفاح : 1000 درهم 💵\n- شجره عنب : 1250 درهم 💵\n-شجره زيتون : 1500 درهم 💵\n- شجره موز : 2000 درهم 💵\n- شجره مانجا : 3000 درهم 💵\n\n⇜ مثال طريقة الزراعه : \n- زراعه بطاطا 10\n- زراعه شجر موز 15\n✧","md",true)
 else
 send(msg.chat_id,msg.id, "⇜ ماعندك حساب بنكي ارسل ↢ ( `انشاء حساب بنكي` )","md",true)
 end
@@ -9068,7 +9068,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis', url="t.me/Y88F8"},
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘', url="t.me/NOVA_SOURCE"},
 },
 }
 }
@@ -9128,7 +9128,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis', url="t.me/Y88F8"},
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘', url="t.me/NOVA_SOURCE"},
 },
 }
 }
@@ -9228,7 +9228,7 @@ if msg.ControllerBot then
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
-send(msg.chat_id,msg.id,"\n⇜ لويس ماعندها حساب بالبنك 🤣","md",true)  
+send(msg.chat_id,msg.id,"\n⇜ ايلا ماعندها حساب بالبنك 🤣","md",true)  
 return false
 end
 local ban = bot.getUser(Remsg.sender_id.user_id)
@@ -9246,7 +9246,7 @@ uuuuu = Redis:get(TheMero.."bbobb"..Remsg.sender_id.user_id)
 ppppp = Redis:get(TheMero.."rrfff"..Remsg.sender_id.user_id) or 0
 ballanceed = Redis:get(TheMero.."boob"..Remsg.sender_id.user_id) or 0
 local convert_mony = string.format("%.0f",ballanceed)
-send(msg.chat_id,msg.id, "⇜ الاسم ↢ "..news.."\n⇜ الحساب ↢ "..ccccc.."\n⇜ بنك ↢ ( لويس )\n⇜ نوع ↢ ( "..uuuuu.." )\n⇜ الزرف ↢ ( "..ppppp.." دولار 💵 )\n⇜ صار رصيده ↢ ( "..convert_mony.." درهم 💵 )\n✧","md",true)
+send(msg.chat_id,msg.id, "⇜ الاسم ↢ "..news.."\n⇜ الحساب ↢ "..ccccc.."\n⇜ بنك ↢ ( ايلا )\n⇜ نوع ↢ ( "..uuuuu.." )\n⇜ الزرف ↢ ( "..ppppp.." دولار 💵 )\n⇜ صار رصيده ↢ ( "..convert_mony.." درهم 💵 )\n✧","md",true)
 else
 send(msg.chat_id,msg.id, "⇜ ماعنده حساب بنكي ","md",true)
 end
@@ -9287,7 +9287,7 @@ data = {
 {
 {text = '🤑', data = msg.sender_id.user_id.."/sahb"},{text = '🤑', data = msg.sender_id.user_id.."/sahb"},{text = '🤑', data = msg.sender_id.user_id.."/sahb"},
 },
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘',url="t.me/NOVA_SOURCE"}, 
 }
 }
 return send(msg.chat_id,msg.id,"⇜ اختر الان :\n✧","md",false, false, false, false, reply_markup)
@@ -9300,7 +9300,7 @@ if text == 'كم فلوسه' and tonumber(msg.reply_to_message_id) ~= 0 then
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
-send(msg.chat_id,msg.id,"\n⇜ لويس ماعنده حساب بالبنك ","md",true)  
+send(msg.chat_id,msg.id,"\n⇜ ايلا ماعنده حساب بالبنك ","md",true)  
 return false
 end
 if Redis:sismember(TheMero.."booob",Remsg.sender_id.user_id) then
@@ -9510,7 +9510,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis', url="t.me/Y88F8"},
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘', url="t.me/NOVA_SOURCE"},
 },
 }
 }

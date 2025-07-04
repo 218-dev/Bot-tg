@@ -7,7 +7,7 @@ msg_chat_id = msg.chat_id
 msg_id = msg.id
 msg_reply_id = msg.reply_to_message_id
 msg_user_send_id = msg.sender_id.user_id
-Bot_Name = (Redis:get(TheMero.."Mero:Name:Bot") or "لويس")
+Bot_Name = (Redis:get(TheMero.."Mero:Name:Bot") or "ايلا")
 if text and text:match('^'..Bot_Name..' ') then
 text = text:gsub('^'..Bot_Name..' ','')
 end
@@ -1834,7 +1834,7 @@ return send(msg.chat_id,msg.id,[[
 ⇜ اختر احد الازرار ( حجره ، ورقه ، مقص )
 ]],"md",false, false, false, false, reply_markup)
 end
-local Bot_Name = (Redis:get(TheMero.."Mero:Name:Bot") or "لويس")
+local Bot_Name = (Redis:get(TheMero.."Mero:Name:Bot") or "ايلا")
 if not Redis:get(TheMero.."Mero:Status:repleall") then
 if text == 'صباح الخير' or text == 'صباحو' or text =='صباح النور' then
 if Redis:get(TheMero.."replayallbot"..msg.chat_id) then
@@ -2042,7 +2042,7 @@ local NamecBots = {
 return send(msg.chat_id,msg.id, NamecBots[math.random(#NamecBots)],"md",true)  
 end
 end
-if text == 'لويس احبك' then
+if text == 'ايلا احبك' then
 if Redis:get(TheMero.."replayallbot"..msg.chat_id) then
 local NamecBots = {
 'ياقلبي',
@@ -2052,7 +2052,7 @@ local NamecBots = {
 return send(msg.chat_id,msg.id, NamecBots[math.random(#NamecBots)],"md",true)  
 end
 end
-if text == 'لويس نتزوج' then
+if text == 'ايلا نتزوج' then
 if Redis:get(TheMero.."replayallbot"..msg.chat_id) then
 local NamecBots = {
 'ليتك نايم',
@@ -2060,7 +2060,7 @@ local NamecBots = {
 return send(msg.chat_id,msg.id, NamecBots[math.random(#NamecBots)],"md",true)  
 end
 end
-if text == 'لويس تحبيني' then
+if text == 'ايلا تحبيني' then
 if Redis:get(TheMero.."replayallbot"..msg.chat_id) then
 local NamecBots = {
 'لا',
@@ -2077,7 +2077,7 @@ local NamecBots = {
 return send(msg.chat_id,msg.id, NamecBots[math.random(#NamecBots)],"md",true)  
 end
 end
-if text == 'لويس تتزوجيني' then
+if text == 'ايلا تتزوجيني' then
 if Redis:get(TheMero.."replayallbot"..msg.chat_id) then
 local NamecBots = {
 'تخيل اتزوجك اذلف بس',
@@ -2290,7 +2290,7 @@ end
 if text == 'منور' or text == 'منوره' or text == 'منورة' then
 if Redis:get(TheMero.."replayallbot"..msg.chat_id) then
 local NamegBots = {
-'بنور لويس',
+'بنور ايلا',
 'بنوري',
 }
 return send(msg.chat_id,msg.id, NamegBots[math.random(#NamegBots)],"md",true)  
@@ -2340,16 +2340,16 @@ local NamecBots = {
 'عيون البوت',
 'انت البوت',
 'يارب صبرك',
-'صعبة تقول لويس',
+'صعبة تقول ايلا',
 'نادني باسمي',
 'شتبي',
 'كُلي اذان صاغيه',
 'قلب البوت',
-'اشغلتنا قل لويس ',
+'اشغلتنا قل ايلا ',
 'بوت فعينك',
 'جعل مايقولها غيرك 🤍.',
 'لاتكلمني اذا قلت اسمي ارد عليك',
-'يهطف اسمي لويس.',
+'يهطف اسمي ايلا.',
 'بس تقول اسمي ارد عليك',
 'هف',
 'مريض انت نادني باسمي',
@@ -2363,15 +2363,15 @@ local NamecBots = {
 'سم حبيبي️',
 'احلى من يناديني',
 'آمرني',
-'بعد عمر لويس',
+'بعد عمر ايلا',
 'امسكوهه عني',
-'بعد قلب لويس',
+'بعد قلب ايلا',
 '‏امر ويش بغيت',
 'ياهلا ومسهلا',
 'خير شتبي',
 'و بعدين معك',
 'لبيه',
-'عيون لويس',
+'عيون ايلا',
 'هااا',
 'هلا ؟',
 'ياخي شتبي/ن',
@@ -2389,9 +2389,34 @@ end
 if text== "الابراج"  or text== "ابراج"  and Redis:get(TheMero..'replayallbot'..msg.chat_id) then
 return send(msg.chat_id,msg.id,"ٰ⇜ اكتب : برج + اسم برجك ")
 end
-if text== "همسه"  or text== "همسة"  and Redis:get(TheMero..'replayallbot'..msg.chat_id) then
-return send(msg.chat_id,msg.id,"⇜ اهلا بك عزيزي\n⇜ اكتب معرف البوت ثم الرساله ثم معرف الشخص\n⇜ مثال\n[@rigbot] مرحبا [@DevZaid]")
+if text == "بوت" or text == "ايلا" and Redis:get(TheMero..'replayallbot'..msg.chat_id) then
+    local replies = {
+        "عيونها", "قلبي", "ها", "تفضل", "غلاي", 
+        "انعم", "حياتي", "شن تبي", "المطلوب", "مش فاضيه"
+    }
+    local random_reply = replies[math.random(#replies)]
+    return send(msg.chat_id, msg.id, random_reply)
 end
+if text == 'الانشاء' then
+    local id = msg.sender_id.user_id
+    local api_url = "http://145.223.80.56:5016/date?id="..id
+    
+    -- استخدام io.popen كبديل بسيط
+    local handle = io.popen("curl -s '"..api_url.."'")
+    local result = handle:read("*a")
+    handle:close()
+    
+    -- معالجة النتيجة مباشرة
+    if result and result ~= "" then
+        local date = result:match('"date":"([^"]+)"')
+        if date then
+            return send(msg.chat_id, msg.id, '*- تاريخ إنشاء حسابك :*\n'..date, "md", true)
+        end
+    end
+    
+    return send(msg.chat_id, msg.id, '- تعذر جلب تاريخ الإنشاء', "md", true)
+end
+
 if text== "تحويل الصيغ" and Redis:get(TheMero..'replayallbot'..msg.chat_id) then
 return send(msg.chat_id,msg.id,"⇜ تحويلات الصيغ عن طريق ارسال الملف في القروب والرد على الملف مثال :\n_ ملصق الى صورة _ الرد (صوره) وبالعكس\n_ بصمه الى صوت _ الرد (صوت) وبالعكس \n_ فيديو الى صوت _ الرد (mp3)\n_ فيديو الى متحركه_الرد (متحركه)")
 end
@@ -6050,7 +6075,7 @@ data = {
 {{text="🦖 Dragon Game 🦖",url='https://t.me/T4TTTTBOT?game=dragon'},{text="🐍 3D Snake Game 🐍",url='https://t.me/T4TTTTBOT?game=snake'}},
 {{text="🔵 Color Game 🔴",url='https://t.me/T4TTTTBOT?game=color'}},
 {{text="🚀 Rocket Game 🚀",url='https://t.me/T4TTTTBOT?game=rocket'},{text="🏹 Arrow Game 🏹",url='https://t.me/T4TTTTBOT?game=arrow'}},
-{{text = 'Louis',url="t.me/Y88F8"}},
+{{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘',url="t.me/NOVA_SOURCE"}},
 }
 }
 send(msg.chat_id,msg.id,'⇜ قائمة الالعاب المتطورة ',"md", true, false, false, false, reply_markup)
@@ -6060,7 +6085,7 @@ if text == "صور" then
 if not Redis:get(TheMero.."Mero:Status:Games"..msg.chat_id) then
 return send(msg.chat_id,msg.id,"⇜ الالعاب معطلة من قبل المشرفين","md",true)
 end
-KlamSpeeddd = {"ديل","زيتون","بن تن","ون بيس","نمله","توت","دكتور","باونتي","عسل","سابق ولاحق","دماغ","خروف","ميكي ماوس","كرسي","كيا","عين","بي ام دبليو","بشت","لاما","ببجي","سيمبا","سبونج بوب","شاي","طبله","كابتن ماجد","اليابان","بزر","ديك رومي","لاكوست","نوكيا","بطه","غوريلا","باب","كراش","لوتس","فرشه","اسعاف","تركيا","تشيلسي","طرزان","ال جي","نوتيلا","طفايه","عدنان ولينا","فتيات القوه","دمعه","قراند","قطط","سله","فلاش","يد","كبد","الصين","مكسرات","فيمتو","باباي","كالويس","مسجد","برايه","بطوط","باندا","كيندر","طياره","سنافر","الصين","سالي","بطريق","قرد","شاورما","ثريه","ميداليه","ماعز","سرير","هدى","بطاريه","احلام","نيسان","لابتوب","نسر","مسدس","مسواك","بير","قوقل","ملعب","دبابه","مغسله","سلم","دبور","كودو","بيانو","كهف","مشط","نقار الخشب","تفاح","طاوله","عنكبوت"};
+KlamSpeeddd = {"ديل","زيتون","بن تن","ون بيس","نمله","توت","دكتور","باونتي","عسل","سابق ولاحق","دماغ","خروف","ميكي ماوس","كرسي","كيا","عين","بي ام دبليو","بشت","لاما","ببجي","سيمبا","سبونج بوب","شاي","طبله","كابتن ماجد","اليابان","بزر","ديك رومي","لاكوست","نوكيا","بطه","غوريلا","باب","كراش","لوتس","فرشه","اسعاف","تركيا","تشيلسي","طرزان","ال جي","نوتيلا","طفايه","عدنان ولينا","فتيات القوه","دمعه","قراند","قطط","سله","فلاش","يد","كبد","الصين","مكسرات","فيمتو","باباي","كاايلا","مسجد","برايه","بطوط","باندا","كيندر","طياره","سنافر","الصين","سالي","بطريق","قرد","شاورما","ثريه","ميداليه","ماعز","سرير","هدى","بطاريه","احلام","نيسان","لابتوب","نسر","مسدس","مسواك","بير","قوقل","ملعب","دبابه","مغسله","سلم","دبور","كودو","بيانو","كهف","مشط","نقار الخشب","تفاح","طاوله","عنكبوت"};
 name = KlamSpeeddd[math.random(#KlamSpeeddd)]
 Redis:set(TheMero.."photohzr"..msg.chat_id,name)
 name = string.gsub(name,"ديل","https://t.me/hsjwjwhs82819/2")
@@ -6254,7 +6279,7 @@ local Text ='الصراحه اتفق هذا شبيهك'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'Louis', url = "https://t.me/Y88F8"}
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘', url = "https://t.me/NOVA_SOURCE"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -6269,7 +6294,7 @@ local Text ='الصراحه اتفق هذي شبيهتك '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'Louis', url = "https://t.me/Y88F8"}
+{text = '𝗡𝗢𝗩𝗔 𝗦𝗢𝗨𝗥𝗖𝗘', url = "https://t.me/NOVA_SOURCE"}
 },
 }
 local msg_id = msg.id/2097152/0.5

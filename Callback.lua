@@ -34,8 +34,8 @@ if data.actor_user_id == UserCheck and tonumber(TheMero) ~= UserCheck then
 local Get_Chat = bot.getChat(data.chat_id)
 local Info_Chats = bot.getSupergroupFullInfo(data.chat_id)
 local UserInfo = bot.getUser(data.actor_user_id)
-send(data.actor_user_id,0,'\nحي الله من زار وخفف\nName ▸ ['..UserInfo.first_name..'](tg://user?id='..data.actor_user_id..')\nId ▸ '..data.actor_user_id..'\nTime ▸ '..os.date("%p %I:%M:%S")..'\nDate ▸ '..os.date("%Y/%m/%d")..'\nLink ▸ ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')\n️',"md",true) 
-send(data.chat_id,0,'\nحي الله من زار وخفف\nName ▸ ['..UserInfo.first_name..'](tg://user?id='..data.actor_user_id..')\nId ▸ '..data.actor_user_id..'\nTime ▸ '..os.date("%p %I:%M:%S")..'\nDate ▸ '..os.date("%Y/%m/%d")..'\n️',"md",true) 
+send(data.actor_user_id,0,'\nعضو غادر\nName ▸ ['..UserInfo.first_name..'](tg://user?id='..data.actor_user_id..')\nId ▸ '..data.actor_user_id..'\nTime ▸ '..os.date("%p %I:%M:%S")..'\nDate ▸ '..os.date("%Y/%m/%d")..'\nLink ▸ ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')\n️',"md",true) 
+send(data.chat_id,0,'\nعضو غادر\nName ▸ ['..UserInfo.first_name..'](tg://user?id='..data.actor_user_id..')\nId ▸ '..data.actor_user_id..'\nTime ▸ '..os.date("%p %I:%M:%S")..'\nDate ▸ '..os.date("%Y/%m/%d")..'\n️',"md",true) 
 end
 end
 end
@@ -563,7 +563,7 @@ data = {
 {text = '0', data = IdUser..'calc&0'},{text = '.', data = IdUser..'calc&.'},{text = '+', data = IdUser..'calc&+'},{text = '=', data = IdUser..'equal'},
 },
 {
-{text = 'Louis', url = 't.me/Y88F8'}, 
+{text = '𝗗𝗲𝘃', url = 't.me/II99l9'}, 
 },
 }
 }
@@ -921,7 +921,7 @@ if Text == 'EndAddarrayy'..IdUser then
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
-{{text = 'Louis',url="t.me/Y88F8"}},
+{{text = '𝗗𝗲𝘃',url="t.me/II99l9"}},
 }
 }
 if Redis:get(TheMero..'Set:arrayy'..IdUser..':'..ChatId) == 'true1' then
@@ -935,7 +935,7 @@ if Text == 'EndAddarray'..IdUser then
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
-{{text = 'Louis',url="t.me/Y88F8"}},
+{{text = '𝗗𝗲𝘃',url="t.me/II99l9"}},
 }
 }
 if Redis:get(TheMero..'Set:array'..IdUser..':'..ChatId) == 'true1' then
@@ -1480,7 +1480,7 @@ parse_mode = "Markdown"
 local keyboard = {}
 keyboard.inline_keyboard = {
 {
-{text = 'Louis', url="t.me/Y88F8"}
+{text = '𝗗𝗲𝘃', url="t.me/II99l9"}
 },
 }
 local msg_rep = Msg_id/2097152/0.5
@@ -1666,7 +1666,7 @@ day = "يوم واحد"
 else
 day = " لم يحدد الوقت "
 end
-local toptop = "⇜ أهلين يا روح لويس هذي أوامري :\n⇜ اختر نوع التوب من الازرار\n\n⇜ تتصفر اللعبة بعد ↤ "..day.."\n✧"
+local toptop = "⇜ أهلين يا روح ايلا هذي أوامري :\n⇜ اختر نوع التوب من الازرار\n\n⇜ تتصفر اللعبة بعد ↤ "..day.."\n✧"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
@@ -1683,7 +1683,7 @@ data = {
 {text = 'اخفاء', data = data.sender_user_id..'/delAmr'}, 
 },
 {
-{text = 'Louis', url="t.me/Y88F8"},
+{text = '𝗗𝗲𝘃', url="t.me/II99l9"},
 },
 }
 }
@@ -1780,7 +1780,7 @@ data = {
 {text = '• رجوع •', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -1877,7 +1877,7 @@ data = {
 {text = '• رجوع •', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -1991,7 +1991,7 @@ data = {
 {text = '• رجوع •', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2111,7 +2111,7 @@ data = {
 {text = '• رجوع •', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2223,7 +2223,7 @@ data = {
 {text = '• رجوع •', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2337,7 +2337,7 @@ data = {
 {text = '• رجوع •', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2357,12 +2357,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇸🇾 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇸🇾 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2377,7 +2377,7 @@ Text = "⇜ تم الغاء حفظ قناتك"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
-{{text='Louis',url="t.me/Y88F8"}},
+{{text='𝗗𝗲𝘃',url="t.me/II99l9"}},
 }}
 bot.editMessageText(ChatId,msg_id,Text, 'md', true, false, reply_markup)
 return false
@@ -2390,7 +2390,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text=" الغاء ",data="/CancelChannelVip:"..IdUser}},
-{{text='Louis',url="t.me/Y88F8"}},
+{{text='𝗗𝗲𝘃',url="t.me/II99l9"}},
 }}
 bot.editMessageText(ChatId,msg_id,Text, 'md', true, false, reply_markup)
 return false
@@ -2409,7 +2409,7 @@ type = 'inline',
 data = {
 {{text="• تغيير قناتي •",data="/ChangeChannelVip:"..IdUser},{text="• مسح قناتي •",data="/DelChannelVip:"..IdUser}},
 {{text="• اخفاء •",data="/HideChannelVip:"..IdUser}},
-{{text='Louis',url="t.me/Y88F8"}},
+{{text='𝗗𝗲𝘃',url="t.me/II99l9"}},
 }}
 bot.editMessageText(ChatId,msg_id,text, 'md', true, false, reply_markup)
 return false   
@@ -2423,7 +2423,7 @@ type = 'inline',
 data = {
 {{text="• وضع قناتي •",data="/ChangeChannelVip:"..IdUser}},
 {{text="• اخفاء •",data="/HideChannelVip:"..IdUser}},
-{{text='Louis',url="t.me/Y88F8"}},
+{{text='𝗗𝗲𝘃',url="t.me/II99l9"}},
 }}
 bot.editMessageText(ChatId,msg_id,Text, 'md', true, false, reply_markup)
 return false
@@ -2450,12 +2450,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇸🇦 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇸🇦 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2475,12 +2475,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇮🇶 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇮🇶 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2500,12 +2500,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇾🇪 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇾🇪 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2525,12 +2525,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇹🇳 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇹🇳 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2550,12 +2550,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇶🇦 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇶🇦 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2575,12 +2575,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇸🇩 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇸🇩 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2600,12 +2600,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇵🇸 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇵🇸 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2625,12 +2625,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇲🇦 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇲🇦 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2650,12 +2650,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇴🇲 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇴🇲 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2675,12 +2675,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇱🇾 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇱🇾 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2700,12 +2700,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇰🇼 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇰🇼 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2725,12 +2725,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇱🇧 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇱🇧 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2750,12 +2750,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇯🇴 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇯🇴 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2775,12 +2775,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇧🇭 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇧🇭 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2800,12 +2800,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇪🇬 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇪🇬 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2825,12 +2825,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇩🇿 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇩🇿 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2850,12 +2850,12 @@ shakseshakse = "طيبة 😇"
 else
 shakseshakse = "شريرة 😈"
 end
-msalm = "⇜ وسوينا لك حساب في بنك لويس\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇦🇪 ❳"
+msalm = "⇜ وسوينا لك حساب في بنك ايلا\n⇜ وشحنالك ٥٠ درهم 💸 هديه\n\n⇜ رقم حسابك ↤ ❲ `"..cccall.."` ❳\n⇜ نوع البطاقة ↤ ❲ "..ccctype.." ❳\n⇜ فلوسك ↤ ❲ 50 ريال 💸 ❳\n⇜ شخصيتك ↤ "..shakseshakse.."\n⇜ دولتك ↤ ❲ 🇦🇪 ❳"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -2885,7 +2885,7 @@ data = {
 },{
 {text = '🇪🇬', data = data.sender_user_id..'/egypt'},{text = '🇩🇿', data = data.sender_user_id..'/algeria'},{text = '🇦🇪', data = data.sender_user_id..'/emarite'},
 },
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 }
 }
 edit(ChatId,Msg_id,ttshakse, 'md', true, false, reply_markup)
@@ -2913,7 +2913,7 @@ data = {
 },{
 {text = '🇪🇬', data = data.sender_user_id..'/egypt'},{text = '🇩🇿', data = data.sender_user_id..'/algeria'},{text = '🇦🇪', data = data.sender_user_id..'/emarite'},
 },
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 }
 }
 edit(ChatId,Msg_id,ttshakse, 'md', true, false, reply_markup)
@@ -2950,7 +2950,7 @@ data = {
 {
 {text = 'شخصية طيبة 😇', data = data.sender_user_id..'/msalm'},{text = 'شخصية شريرة 😈', data = data.sender_user_id..'/shrer'},
 },
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 }
 }
 edit(ChatId,Msg_id,ttshakse, 'md', true, false, reply_markup)
@@ -2988,7 +2988,7 @@ data = {
 {
 {text = 'شخصية طيبة 😇', data = data.sender_user_id..'/msalm'},{text = 'شخصية شريرة 😈', data = data.sender_user_id..'/shrer'},
 },
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 }
 }
 edit(ChatId,Msg_id,ttshakse, 'md', true, false, reply_markup)
@@ -3025,7 +3025,7 @@ data = {
 {
 {text = 'شخصية طيبة 😇', data = data.sender_user_id..'/msalm'},{text = 'شخصية شريرة 😈', data = data.sender_user_id..'/shrer'},
 },
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 }
 }
 edit(ChatId,Msg_id,ttshakse, 'md', true, false, reply_markup)
@@ -3054,7 +3054,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -3069,7 +3069,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -3087,7 +3087,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Louis',url="t.me/Y88F8"}, 
+{text = '𝗗𝗲𝘃',url="t.me/II99l9"}, 
 },
 }
 }
@@ -3208,7 +3208,7 @@ return edit(ChatId,Msg_id, "⇜ لديك لاعب مركز هجوم\n⇜ ابح�
 end
 cccallcc = tonumber(ballance) - 39000
 Redis:set(TheMero.."boob"..data.sender_user_id,cccallcc)
-nameplayer = "لويس سواريز"
+nameplayer = "ايلا سواريز"
 energyplayer = "83"
 mrkzplayer = "مهاجم"
 cityplayer = "🇺🇦 اوكرانيا"
@@ -3219,14 +3219,14 @@ Redis:set(TheMero.."cityplayer".."1"..data.sender_user_id,cityplayer)
 Redis:set(TheMero.."priceplayer".."1"..data.sender_user_id,39000)
 ballance = Redis:get(TheMero.."boob"..data.sender_user_id) or 0
 local convert_mony = string.format("%.0f",ballance)
-ttshakse = '⌯ تم شراء لاعب 🏃‍♂️️\n\n⇜ اسم الاعب : لويس سواريز\n⇜ مركزه : مهاجم\n⇜ طاقة اللاعب : 83\n⇜ الجنسية : اوكرانيا 🇺🇦\n⇜ السعر : 39000 درهم 💵\n⇜ رصيدك الان : '..convert_mony..' درهم 💵\n✧'
+ttshakse = '⌯ تم شراء لاعب 🏃‍♂️️\n\n⇜ اسم الاعب : ايلا سواريز\n⇜ مركزه : مهاجم\n⇜ طاقة اللاعب : 83\n⇜ الجنسية : اوكرانيا 🇺🇦\n⇜ السعر : 39000 درهم 💵\n⇜ رصيدك الان : '..convert_mony..' درهم 💵\n✧'
 edit(ChatId,Msg_id,ttshakse, 'md', true)
 end
 end
 if Text and Text:match('(%d+)/luisno') then
 local UserId = Text:match('(%d+)/luisno')
 if tonumber(data.sender_user_id) == tonumber(UserId) then
-edit(ChatId,Msg_id,"⇜ تم الغاء شراء اللاعب لويس سواريز ", 'md', true)
+edit(ChatId,Msg_id,"⇜ تم الغاء شراء اللاعب ايلا سواريز ", 'md', true)
 end
 end
 if Text and Text:match('(%d+)/danyes') then
@@ -5097,103 +5097,174 @@ nameuser = "["..nameuser.first_name.."](tg://user?id="..nameuser.id..")"
 else
 nameuser = 'لا يوجد اسم'
 end
+---------------------------------------------------------------------------------
 os.execute("yt-dlp "..link.." --max-filesize 25M -o '"..title..".mp3'")
-local titfile = io.open("./"..title..".mp3","r")
-if titfile then
-bot.sendAudio(ChatId,Msg_id,'./'..title..'.mp3',"- من قبل : "..nameuser.." ","md",nil,title)
-bot.deleteMessages(ChatId,{[1]= Msg_id})
-sleep(1)
-os.remove(""..title..".mp3")
-Redis:del(TheMero.."soundidche"..ChatId..IdUser)
-else
-Redis:del(TheMero.."soundidche"..ChatId..IdUser)
-return edit(ChatId,Msg_id,'\n⇜ لا استطيع تحميل اكثر من 25 ميغا',"md",true)
+        local titfile = io.open("./"..title..".mp3","r")
+        
+        if titfile then
+            -- Prepare caption with track info
+            local caption = "*- Uploader : @QJS_bot .*"
+            
+ 
+           
+            
+            -- Download thumbnail if available
+            local thumbPath = nil
+            if trackInfo.image then
+                thumbPath = "./"..title..".jpg"
+                os.execute("wget "..trackInfo.image.." -O "..thumbPath)
+            end
+            
+            -- Send audio with metadata
+            bot.sendAudio(ChatId, Msg_id, './'..title..'.mp3', caption, "md", nil, trackInfo.title, nil, thumbPath)
+            
+            -- Clean up
+            bot.deleteMessages(ChatId, {[1]= Msg_id})
+            sleep(1)
+            os.remove(""..title..".mp3")
+            if thumbPath then os.remove(thumbPath) end
+            Redis:del(TheMero.."soundidche"..ChatId..IdUser)
+        else
+            Redis:del(TheMero.."soundidche"..ChatId..IdUser)
+            return bot.editMessageText(ChatId, Msg_id, '\n↢ لا استطيع تحميل اكثر من 25 ميغا', "md", true)
+        end
+    else
+        bot.answerCallbackQuery(data.id, "- هذا الامر لا يخصك ❗", true)
+    end
 end
-else
-bot.answerCallbackQuery(data.id, "⇜ الامر ليس لك", true)
-end
-end
+
+
+
 
 if Text and Text:match('(.*):yout:(.*)') then
-local UserId = {string.match(Text,"^(.*):yout:(.*)$")}
-if Redis:get(TheMero.."youtidche"..ChatId..IdUser) == UserId[1] then
-link = "https://youtu.be/"..UserId[2]
-title = UserId[1]
-local nameuser = bot.getUser(IdUser)
-if nameuser.first_name then
-nameuser = "["..nameuser.first_name.."](tg://user?id="..nameuser.id..")"
-else
-nameuser = 'لا يوجد اسم'
-end
-local reply_markup = bot.replyMarkup{
-type = 'inline',
-data = {
-{
-{text = 'تحميل صوت', data = title..'sound/'..UserId[2]}, {text = 'تحميل فيديو', data = title..'video/'..UserId[2]}, 
-},
-}
-}
-local txx = "["..title.."](http://youtu.be/"..UserId[2]..")\n\n- من قبل : "..nameuser.."\n✧"
-bot.editMessageText(ChatId,Msg_id,txx, 'md', true, false, reply_markup)
-else
-bot.answerCallbackQuery(data.id, "⇜ الامر ليس لك", true)
-end
-end
-
-if Text and Text:match('(.*)sound/(.*)') then
-local UserId = {string.match(Text,"^(.*)sound/(.*)$")}
-if Redis:get(TheMero.."youtidche"..ChatId..IdUser) == UserId[1] then
-link = "https://youtu.be/"..UserId[2]
-title = UserId[1]
-local nameuser = bot.getUser(IdUser)
-if nameuser.first_name then
-nameuser = "["..nameuser.first_name.."](tg://user?id="..nameuser.id..")"
-else
-nameuser = 'لا يوجد اسم'
-end
-os.execute("yt-dlp "..link.." --max-filesize 25M -f 251 -o '"..title..".mp3'")
-local yosfile = io.open("./"..title..".mp3","r")
-if yosfile then
-bot.sendAudio(ChatId,Msg_id,'./'..title..'.mp3',"- من قبل : "..nameuser.." ","md",nil,title)
-bot.deleteMessages(ChatId,{[1]= Msg_id})
-sleep(1)
-os.remove(""..title..".mp3")
-Redis:del(TheMero.."youtidche"..ChatId..IdUser)
-else
-Redis:del(TheMero.."youtidche"..ChatId..IdUser)
-return edit(ChatId,Msg_id,'\n⇜ لا استطيع تحميل اكثر من 25 ميغا',"md",true)
-end
-else
-bot.answerCallbackQuery(data.id, "⇜ الامر ليس لك", true)
-end
+  local UserId = {string.match(Text,"^(.*):yout:(.*)$")}
+  if Redis:get(TheMero.."youtidche"..ChatId..IdUser) == UserId[1] then
+    link = "https://youtu.be/"..UserId[2]
+    search_query = UserId[1] -- This is the original search text from user
+    local nameuser = bot.getUser(IdUser)
+    if nameuser.first_name then
+      nameuser = "["..nameuser.first_name.."](tg://user?id="..nameuser.id..")"
+    else
+      nameuser = 'لا يوجد اسم'
+    end
+    local reply_markup = bot.replyMarkup{
+      type = 'inline',
+      data = {
+        {
+          {text = 'تحميل صوت', data = search_query..'sound/'..UserId[2]..'/'..Msg_id}, 
+          {text = 'تحميل فيديو', data = search_query..'video/'..UserId[2]..'/'..Msg_id}, 
+        },
+      }
+    }
+    local txx = "*- اختر طريقة التحميل .\n-*"
+    bot.editMessageText(ChatId,Msg_id,txx, 'md', true, false, reply_markup)
+  else
+    bot.answerCallbackQuery(data.id, "- هذا الامر لا يخصك ❗", true)
+  end
 end
 
-if Text and Text:match('(.*)video/(.*)') then
-local UserId = {string.match(Text,"^(.*)video/(.*)$")}
-if Redis:get(TheMero.."youtidche"..ChatId..IdUser) == UserId[1] then
-link = "https://youtu.be/"..UserId[2]
-title = UserId[1]
-local nameuser = bot.getUser(IdUser)
-if nameuser.first_name then
-nameuser = "["..nameuser.first_name.."](tg://user?id="..nameuser.id..")"
-else
-nameuser = 'لا يوجد اسم'
+if Text and Text:match('(.*)sound/(.*)/(.*)') then
+  local search_query, video_id, original_msg = string.match(Text,"^(.*)sound/(.*)/(.*)$")
+  if Redis:get(TheMero.."youtidche"..ChatId..IdUser) == search_query then
+    -- Edit message to show loading
+    bot.editMessageText(ChatId,Msg_id, "*- انتظر قليلا ...*", 'md', true)
+    
+    -- Get download links from API
+    local api_url = "http://145.223.80.56:5001/get?q=https://youtu.be/"..video_id
+    local response = request(api_url)
+    local json_data = JSON.decode(response)
+    
+    if json_data and json_data["رابط الصوت"] then
+      local audio_url = json_data["رابط الصوت"]
+      local file_name = "audio_"..video_id..".mp3"
+      
+      -- Download the audio file
+      os.execute("curl -o '"..file_name.."' '"..audio_url.."'")
+      local audio_file = io.open(file_name, "r")
+      
+      if audio_file then
+        audio_file:close()
+        -- Delete loading message
+        bot.deleteMessages(ChatId, {[1] = Msg_id})
+        
+        -- Prepare reply markup with channel button
+        local reply_markup = bot.replyMarkup{
+          type = 'inline',
+          data = {
+            {
+              {text = 'التحديثات', url = 'https://t.me/vvu_vvv'}
+            }
+          }
+        }
+        
+        -- Send audio as reply to original search message
+        bot.sendAudio(ChatId, original_msg, './'..file_name, "*- Uploader : @QJS_bot .*", "md", nil, search_query, reply_markup)
+        sleep(1)
+        os.remove(file_name)
+        Redis:del(TheMero.."youtidche"..ChatId..IdUser)
+      else
+        Redis:del(TheMero.."youtidche"..ChatId..IdUser)
+        bot.editMessageText(ChatId,Msg_id, '\n↢ فشل في تحميل الملف الصوتي', "md", true)
+      end
+    else
+      Redis:del(TheMero.."youtidche"..ChatId..IdUser)
+      bot.editMessageText(ChatId,Msg_id, '\n↢ لم يتم العثور على رابط الصوت', "md", true)
+    end
+  else
+    bot.answerCallbackQuery(data.id, "- هذا الامر لا يخصك ❗", true)
+  end
 end
-os.execute("yt-dlp "..link.." --max-filesize 50M -f 18 -o '"..title..".mp4'")
-local yovfile = io.open("./"..title..".mp4","r")
-if yovfile then
-bot.sendVideo(IdUser,0,'./'..title..'.mp4'," ","md")
-edit(ChatId,Msg_id,'( '..nameuser..' )\n⇜ تم ارسال الفيديو لك بخاص البوت', 'md', true)
-sleep(2)
-os.remove(""..title..".mp4")
-Redis:del(TheMero.."youtidche"..ChatId..IdUser)
-else
-Redis:del(TheMero.."youtidche"..ChatId..IdUser)
-return edit(ChatId,Msg_id,'\n⇜ لا استطيع تحميل اكثر من 50 ميغا',"md",true)
-end
-else
-bot.answerCallbackQuery(data.id, "⇜ الامر ليس لك", true)
-end
+
+if Text and Text:match('(.*)video/(.*)/(.*)') then
+  local search_query, video_id, original_msg = string.match(Text,"^(.*)video/(.*)/(.*)$")
+  if Redis:get(TheMero.."youtidche"..ChatId..IdUser) == search_query then
+    -- Edit message to show loading
+    bot.editMessageText(ChatId,Msg_id, "*- انتظر قليلا ...*", 'md', true)
+    
+    -- Get download links from API
+    local api_url = "http://145.223.80.56:5001/get?q=https://youtu.be/"..video_id
+    local response = request(api_url)
+    local json_data = JSON.decode(response)
+    
+    if json_data and json_data["رابط الفيديو"] then
+      local video_url = json_data["رابط الفيديو"]
+      local file_name = "video_"..video_id..".mp4"
+
+-- Download the video file
+      os.execute("curl -o '"..file_name.."' '"..video_url.."'")
+      local video_file = io.open(file_name, "r")
+      
+      if video_file then
+        video_file:close()
+        -- Delete loading message
+        bot.deleteMessages(ChatId, {[1] = Msg_id})
+        
+        -- Prepare reply markup with channel button
+        local reply_markup = bot.replyMarkup{
+          type = 'inline',
+          data = {
+            {
+              {text = 'التحديثات', url = 'https://t.me/NOVA_SOURCE'}
+            }
+          }
+        }
+        
+        -- Send video as reply to original search message
+        bot.sendVideo(ChatId, original_msg, './'..file_name, "*- Uploader : @QJS_bot .*"..search_query, "md", nil, reply_markup)
+        sleep(2)
+        os.remove(file_name)
+        Redis:del(TheMero.."youtidche"..ChatId..IdUser)
+      else
+        Redis:del(TheMero.."youtidche"..ChatId..IdUser)
+        bot.editMessageText(ChatId,Msg_id, '\n*↢ فشل في تحميل ملف الفيديو*', "md", true)
+      end
+    else
+      Redis:del(TheMero.."youtidche"..ChatId..IdUser)
+      bot.editMessageText(ChatId,Msg_id, '\n*↢ لم يتم العثور على رابط الفيديو*', "md", true)
+    end
+  else
+    bot.answerCallbackQuery(data.id, "- هذا الامر لا يخصك ❗", true)
+  end
 end
 
 if Text == '/akabmute' then
@@ -5217,7 +5288,7 @@ Redis:srem(TheMero.."SilentGroup:Group"..ChatId,kk_id)
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
-{{text = 'Louis', url = 't.me/Y88F8'},},}}
+{{text = '𝗗𝗲𝘃', url = 't.me/II99l9'},},}}
 local TextHelp = Reply_Status(kk_id,"⇜ تم كتمه في القروب").Reply
 edit(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 else
@@ -7565,7 +7636,7 @@ data = {
 }
 }
 local TextHelp = [[
-⤶ *العاب لويس ♪ *
+⤶ *العاب ايلا ♪ *
 
 ⇜ البنك
 ⇜ كرسي
@@ -7623,7 +7694,7 @@ data = {
 }
 }
 local TextHelp = [[
-⤶ *العاب لويس ♪ *
+⤶ *العاب ايلا ♪ *
 
 ⇜ البنك
 ⇜ كرسي
@@ -7684,7 +7755,7 @@ data = {
 }
 }
 local TextHelp = [[
-*⤶ اهلين فيك بـ أوامر لويس
+*⤶ اهلين فيك بـ أوامر ايلا
 
 𝟏 ↢ اوامر الادارة 
 𝟐 ↢ اوامر الاعدادات
@@ -7693,7 +7764,7 @@ local TextHelp = [[
 𝟓 ↢ اوامر الترفية
 𝟔 ↢ اوامر الالعاب
 
-⌯ Master* [Zaid](T.me/DevZaid)
+➜* [𝗦𝗼𝘂𝗿𝗰𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹](T.me/NOVA_SOURCE)
 ]]
 edit(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
